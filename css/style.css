@@ -14,6 +14,18 @@
   }
 }
 
+.gradient-text {
+  background: linear-gradient(45deg, #78b0ff, #b196ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-dark {
+  background: linear-gradient(45deg, #5c8ad4, #9f86e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -262,7 +274,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 99;
   top: 0;
   background: #191816;
@@ -318,7 +331,7 @@ header nav ul {
 
 header nav ul li a {
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   padding: 0 10px;
 }
 
@@ -330,8 +343,8 @@ header nav ul li a {
   }
 }
 
-header nav ul li:hover a {
-  color: #CEE4AF;
+header nav ul li:hover a, header nav ul li.active a {
+  color: #a8cafa;
 }
 
 @media (max-width: 960px) {
@@ -415,7 +428,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  background: #191816;
+  background: linear-gradient(235deg, #8485B5, #325FA6);
 }
 
 @media (max-width: 960px) {
@@ -584,7 +597,7 @@ section .theme-news .theme-content ul li .more {
 
 section .theme-news .theme-content ul li .more a {
   font-size: 20px;
-  background: #CEE4AF;
+  background: #a8cafa;
   padding: 4px 10px;
   border-radius: 8px;
   overflow: hidden;
@@ -592,7 +605,7 @@ section .theme-news .theme-content ul li .more a {
 
 section .theme-news .theme-content ul li .more:hover a {
   background: #191816;
-  color: #CEE4AF;
+  color: #a8cafa;
 }
 
 section .theme-intro {
@@ -633,16 +646,20 @@ section .theme-intro .intro-why {
 }
 
 section .theme-intro .intro-why .theme-title h3 {
-  color: #CEE4AF;
+  color: #a8cafa;
 }
 
 section .theme-intro .intro-why .theme-content p {
-  color: #CEE4AF;
+  color: #a8cafa;
   font-size: 18px;
 }
 
 section .theme-intro .intro-when {
-  background: #CEE4AF;
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+}
+
+section .theme-intro .intro-when .theme-title h3 {
+  color: #191816;
 }
 
 section .theme-intro .intro-when .theme-content .material-icons {
@@ -667,7 +684,7 @@ section .theme-intro .intro-when .theme-content .item {
 
 section .theme-intro .intro-when .theme-content .item .date {
   width: 45%;
-  background: #CEE4AF;
+  background: #a8cafa;
   color: #191816;
   font-size: 18px;
   padding: 10px;
@@ -679,7 +696,7 @@ section .theme-intro .intro-when .theme-content .item .date {
 section .theme-intro .intro-when .theme-content .item .event {
   width: 55%;
   background: #191816;
-  color: #CEE4AF;
+  color: #a8cafa;
   font-size: 18px;
   padding: 10px;
   -ms-flex-item-align: stretch;
@@ -746,7 +763,7 @@ section .theme-video .theme-content .list .video-container iframe {
 }
 
 section .theme-faq {
-  background: url(../img/faq_bg.png) center bottom no-repeat #CEE4AF;
+  background: url(../img/faq_bg.png) center bottom no-repeat #a8cafa;
   background-size: contain;
   padding: 80px 0;
 }
@@ -804,14 +821,14 @@ section .theme-faq .theme-content .faq-group {
 }
 
 section .theme-faq .theme-content .faq-group .title {
-  background: #CEE4AF;
+  background: #a8cafa;
   display: inline-block;
   padding: 4px 12px;
   margin-bottom: 12px;
 }
 
 section .theme-faq .theme-content .faq-group .list {
-  border-bottom: 1px solid #CEE4AF;
+  border-bottom: 1px solid #a8cafa;
   padding-bottom: 20px;
 }
 
@@ -821,7 +838,7 @@ section .theme-faq .theme-content .faq-group .list h5 {
   display: flex;
   letter-spacing: 2px;
   font-weight: 500;
-  color: #CEE4AF;
+  color: #a8cafa;
 }
 
 section .theme-faq .theme-content .faq-group .list h5 .icon {
@@ -835,11 +852,11 @@ section .theme-faq .theme-content .faq-group .list h5 .icon span {
   width: 20px;
   height: 3px;
   border-radius: 10px;
-  background: #CEE4AF;
+  background: #a8cafa;
   position: absolute;
   top: 90%;
   left: 0;
-  color: #CEE4AF;
+  color: #a8cafa;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -876,5 +893,591 @@ section .theme-faq .theme-content .faq-group .list + .list {
 
 section .theme-faq .theme-content .faq-group + .faq-group {
   margin-top: 20px;
+}
+
+section .theme-smart {
+  background: #a8cafa;
+}
+
+section .theme-smart .theme-smart-tab {
+  background: url(../img/news_bg1.png) center top no-repeat;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+@media (max-width: 960px) {
+  section .theme-smart .theme-smart-tab {
+    background-size: auto 100px;
+    padding: 60px 0;
+  }
+}
+
+section .theme-smart .theme-smart-tab > h3 {
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+  letter-spacing: 8px;
+  padding: 4px 32px;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  border: 5px solid #9eabc6;
+}
+
+section .theme-smart .theme-smart-tab > h3 span {
+  font-size: 32px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+section .theme-smart .theme-smart-tab .tab-box {
+  margin-top: 40px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-smart .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-smart .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-smart .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-smart .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-smart .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-content6,
+section .theme-smart .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-content7 {
+  display: block;
+}
+
+section .theme-smart .theme-smart-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label {
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 10px 10px 0;
+  display: inline-block;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-smart .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-smart .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-smart .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-smart .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-smart .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6,
+section .theme-smart .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-option7 {
+  background: #fff;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 120px 60px;
+  border-radius: 20px;
+  background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #191816;
+  background-size: contain;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-title h3 {
+  text-align: center;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content p {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content p.note {
+  font-size: 14px;
+  text-align: center;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content p.note a {
+  display: inline-block;
+  color: #a8cafa;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  text-align: left;
+  margin-left: 20px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ul li {
+  color: #fff;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal {
+  list-style-type: decimal;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li {
+  margin-top: 16px;
+  color: #fff;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li b {
+  color: #fff;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li {
+  width: 48%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 28px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li h4 {
+  color: #fff;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li p {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li ul {
+  margin-top: 20px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content h6 {
+  background: #fff;
+  line-height: 2;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content table {
+  width: 100%;
+  border: 1px solid #191816;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content table tr th {
+  color: #191816;
+  line-height: 3.2;
+  text-align: center;
+  background: linear-gradient(235deg, #9bc1f6, #cabaf8);
+  border-right: 1px solid #191816;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content table tr td {
+  color: #fff;
+  line-height: 2.8;
+  background: rgba(255, 255, 255, 0.1);
+  border-right: 1px solid #191816;
+  border-bottom: 1px solid #191816;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content table tr td[rowspan="4"] {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+section .theme-5g {
+  background: #a8cafa;
+}
+
+section .theme-5g .theme-smart-tab {
+  background: url(../img/news_bg1.png) center top no-repeat;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+@media (max-width: 960px) {
+  section .theme-5g .theme-smart-tab {
+    background-size: auto 100px;
+    padding: 60px 0;
+  }
+}
+
+section .theme-5g .theme-smart-tab > h3 {
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+  padding: 4px 32px;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  border: 5px solid #9eabc6;
+}
+
+section .theme-5g .theme-smart-tab > h3 span {
+  font-size: 32px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+section .theme-5g .theme-smart-tab .tab-box {
+  margin-top: 40px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-5g .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-5g .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-5g .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-5g .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-5g .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-5g .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-content6 {
+  display: block;
+}
+
+section .theme-5g .theme-smart-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-5g .theme-smart-tab .tab-box label {
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 10px 10px 0;
+  display: inline-block;
+}
+
+section .theme-5g .theme-smart-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-5g .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-5g .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-5g .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-5g .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-5g .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-5g .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6 {
+  background: #fff;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 120px 60px;
+  border-radius: 20px;
+  background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #191816;
+  background-size: contain;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-title h3 {
+  text-align: center;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content p {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content p.note {
+  font-size: 14px;
+  text-align: center;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content p.note a {
+  display: inline-block;
+  color: #a8cafa;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: cjk-decimal;
+  text-align: left;
+  margin-left: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul li {
+  color: #fff;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal {
+  list-style-type: decimal;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li {
+  color: #fff;
+  margin-top: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li b {
+  color: #fff;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.disc {
+  list-style-type: disc;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.disc li {
+  color: #fff;
+  margin-top: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.disc li b {
+  color: #fff;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol > li {
+  width: 48%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 28px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol > li h4 {
+  color: #fff;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol > li p {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol > li ul {
+  margin-top: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content h6 {
+  background: #fff;
+  line-height: 2;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content table {
+  width: 100%;
+  border: 1px solid #191816;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content table tr th {
+  color: #191816;
+  line-height: 3.2;
+  text-align: center;
+  background: linear-gradient(235deg, #9bc1f6, #cabaf8);
+  border-right: 1px solid #191816;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content table tr td {
+  color: #fff;
+  line-height: 2.8;
+  background: rgba(255, 255, 255, 0.1);
+  border-right: 1px solid #191816;
+  border-bottom: 1px solid #191816;
+}
+
+section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content table tr td[rowspan="4"] {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+section .theme-yocity {
+  background: #a8cafa;
+}
+
+section .theme-yocity .theme-smart-tab {
+  background: url(../img/news_bg1.png) center top no-repeat;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+@media (max-width: 960px) {
+  section .theme-yocity .theme-smart-tab {
+    background-size: auto 100px;
+    padding: 60px 0;
+  }
+}
+
+section .theme-yocity .theme-smart-tab > h3 {
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+  padding: 4px 32px;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  border: 5px solid #9eabc6;
+}
+
+section .theme-yocity .theme-smart-tab > h3 span {
+  font-size: 32px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box {
+  margin-top: 40px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-content6 {
+  display: block;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box label {
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 10px 10px 0;
+  display: inline-block;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-yocity .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6 {
+  background: #fff;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 120px 60px;
+  border-radius: 20px;
+  background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #fff;
+  background-size: contain;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-title h3 {
+  text-align: center;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content h5 {
+  margin-top: 40px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content h6 {
+  margin-top: 0px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content p {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .link {
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 28px;
+  margin: 20px 0 40px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .link:hover {
+  opacity: 0.9;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .link-outline {
+  border: 1px solid #325FA6;
+  color: #325FA6;
+  font-size: 15px;
+  padding: 2px 8px;
+  margin: 20px 0 40px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .link-outline:hover {
+  background: linear-gradient(235deg, #8485B5, #325FA6);
+  color: #fff;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal {
+  list-style-type: decimal;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li b {
+  color: #fff;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .note {
+  font-size: 13px;
+  text-align: justify;
+  background: #f4f5f6;
+  padding: 20px;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .note .disc {
+  list-style-type: disc;
+}
+
+section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content .note .disc li {
+  text-align: justify;
+  margin-left: 20px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

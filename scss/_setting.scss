@@ -19,7 +19,19 @@ $font-sans: "Noto Sans TC", sans-serif;
 $font-serif: "Noto serif TC", sans-serif;
 $font-en: "Playfair Display", serif;
 $primary-color: #191816;
-$secondery-color: #CEE4AF;
+$secondery-color: #a8cafa;
+$linear-color: linear-gradient(235deg, #8485B5, #325FA6);
+$linear-color-light: linear-gradient(235deg, #9bc1f6, #cabaf8);
+.gradient-text {
+    background: linear-gradient(45deg, #78b0ff, #b196ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.gradient-text-dark {
+    background: linear-gradient(45deg, #5c8ad4, #9f86e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 //setting
 body{ font-family: "Noto Sans TC", sans-serif;}

@@ -33,7 +33,7 @@
                 <li><a href="index-5g.html" target="_blank">5G加速器徵選</a></li>
                 <li><a href="#a1" target="_blank">最新消息</a></li>
                 <li><a href="#a2" target="_blank">FAQ</a></li>
-                <li><a href="#" target="_blank">名單公告</a></li>
+                <!-- <li><a href="#" target="_blank">名單公告</a></li> -->
                 <li><a href="#a3" target="_blank">媒體報導</a></li>
                 <li><a href="#a4" target="_blank">參賽專區</a></li>
             </ul>
@@ -343,6 +343,9 @@
             $(this).toggleClass('active'); // 如果你想讓按鈕變化樣式（選配）
         });
         $('.menu li a[href^="#"]').on('click', function (e) {
+            $('li').removeClass('active');         
+            $(this).parent().addClass('active');
+
             e.preventDefault();
 
             const target = $($(this).attr('href'));
