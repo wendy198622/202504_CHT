@@ -25,6 +25,7 @@ header{
             display: none;
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             // height: 100%;
             background: $primary-color;
@@ -287,7 +288,7 @@ section{
             }
         }
         .intro-when{
-            background: $linear-color;
+            background: $linear-color-light;
 
             .theme-title{
                 h3{
@@ -538,6 +539,11 @@ section{
                     border-radius: 10px;
                     margin: 10px 10px 0;
                     display: inline-block;
+                    @media (max-width:800px){
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
+                    }
                     &:hover{
                         cursor: pointer;
                     }
@@ -562,10 +568,12 @@ section{
                     padding: 120px 60px;
                     // background: rgba(225,225,225,1);
                     border-radius: 20px;
-
                     background: url(../img/intro_bg1.png) center top repeat-x,
                     url(../img/intro_bg2.png) center bottom repeat-x $primary-color;
                     background-size: contain;
+                    @media (max-width:960px){
+                        padding: 60px 20px;                        
+                    }
 
                     .theme-title{
                         h3{
@@ -575,6 +583,12 @@ section{
                     }
 
                     .theme-content{
+                        h4{
+                            border: 1px solid $secondery-color;
+                            border-radius: 20px;
+                            display: inline-block;
+                            padding: 0 32px;
+                        }
                         p{
                             margin-top: 20px;
                             color: #fff;
@@ -623,6 +637,11 @@ section{
                                 padding: 28px;
                                 border-radius: 20px;
                                 margin-top: 20px;
+                                @media (max-width:960px){
+                                    width: 100%;     
+                                    padding: 16px;               
+                                }
+            
                                 h4{
                                     color: #fff;
                                 }
@@ -745,6 +764,11 @@ section{
                     border-radius: 10px;
                     margin: 10px 10px 0;
                     display: inline-block;
+                    @media (max-width:800px){
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
+                    }
                     &:hover{
                         cursor: pointer;
                     }
@@ -768,10 +792,12 @@ section{
                     padding: 120px 60px;
                     // background: rgba(225,225,225,1);
                     border-radius: 20px;
-
                     background: url(../img/intro_bg1.png) center top repeat-x,
                     url(../img/intro_bg2.png) center bottom repeat-x $primary-color;
                     background-size: contain;
+                    @media (max-width:960px){
+                        padding: 60px 20px;                        
+                    }
 
                     .theme-title{
                         h3{
@@ -805,11 +831,13 @@ section{
                                 color: #fff;
                                 line-height: 1.8;
                                 margin-top: 20px;
+                                // margin-left: 20px;
 
                             }
                         }
                         ul.decimal{
                             list-style-type: decimal;
+                            margin-left: 20px;
                             li{
                                 color: #fff;
                                 margin-top: 20px;
@@ -833,6 +861,7 @@ section{
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: space-between;
+                            margin-left: 20px;
                             > li{
                                 width: 48%;
                                 color: #fff;
@@ -965,10 +994,12 @@ section{
                     padding: 120px 60px;
                     // background: rgba(225,225,225,1);
                     border-radius: 20px;
-
                     background: url(../img/intro_bg1.png) center top repeat-x,
                     url(../img/intro_bg2.png) center bottom repeat-x #fff;
                     background-size: contain;
+                    @media (max-width:960px){
+                        padding: 60px 20px;                        
+                    }
 
                     .theme-title{
                         h3{
@@ -1021,6 +1052,7 @@ section{
                                 // color: #fff;
                                 text-align: justify;
                                 margin-top: 20px;
+                                margin-left: 20px;
                                 b{
                                     color: #fff;
                                 }

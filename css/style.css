@@ -93,7 +93,7 @@ h3 {
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 160%;
   font-weight: 600;
 }
@@ -305,6 +305,7 @@ header nav {
     display: none;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: #191816;
   }
@@ -655,7 +656,7 @@ section .theme-intro .intro-why .theme-content p {
 }
 
 section .theme-intro .intro-when {
-  background: linear-gradient(235deg, #8485B5, #325FA6);
+  background: linear-gradient(235deg, #9bc1f6, #cabaf8);
 }
 
 section .theme-intro .intro-when .theme-title h3 {
@@ -961,6 +962,14 @@ section .theme-smart .theme-smart-tab .tab-box label {
   display: inline-block;
 }
 
+@media (max-width: 800px) {
+  section .theme-smart .theme-smart-tab .tab-box label {
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 10px 4px 0;
+  }
+}
+
 section .theme-smart .theme-smart-tab .tab-box label:hover {
   cursor: pointer;
 }
@@ -986,8 +995,21 @@ section .theme-smart .theme-smart-tab .tab-box .tab-content {
   background-size: contain;
 }
 
+@media (max-width: 960px) {
+  section .theme-smart .theme-smart-tab .tab-box .tab-content {
+    padding: 60px 20px;
+  }
+}
+
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-title h3 {
   text-align: center;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content h4 {
+  border: 1px solid #a8cafa;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0 32px;
 }
 
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content p {
@@ -1051,6 +1073,13 @@ section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > 
   padding: 28px;
   border-radius: 20px;
   margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+  section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li {
+    width: 100%;
+    padding: 16px;
+  }
 }
 
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content ol > li h4 {
@@ -1165,6 +1194,14 @@ section .theme-5g .theme-smart-tab .tab-box label {
   display: inline-block;
 }
 
+@media (max-width: 800px) {
+  section .theme-5g .theme-smart-tab .tab-box label {
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 10px 4px 0;
+  }
+}
+
 section .theme-5g .theme-smart-tab .tab-box label:hover {
   cursor: pointer;
 }
@@ -1187,6 +1224,12 @@ section .theme-5g .theme-smart-tab .tab-box .tab-content {
   border-radius: 20px;
   background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #191816;
   background-size: contain;
+}
+
+@media (max-width: 960px) {
+  section .theme-5g .theme-smart-tab .tab-box .tab-content {
+    padding: 60px 20px;
+  }
 }
 
 section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-title h3 {
@@ -1225,6 +1268,7 @@ section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul li {
 
 section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal {
   list-style-type: decimal;
+  margin-left: 20px;
 }
 
 section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li {
@@ -1258,6 +1302,7 @@ section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 20px;
 }
 
 section .theme-5g .theme-smart-tab .tab-box .tab-content .theme-content ol > li {
@@ -1405,6 +1450,12 @@ section .theme-yocity .theme-smart-tab .tab-box .tab-content {
   background-size: contain;
 }
 
+@media (max-width: 960px) {
+  section .theme-yocity .theme-smart-tab .tab-box .tab-content {
+    padding: 60px 20px;
+  }
+}
+
 section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-title h3 {
   text-align: center;
 }
@@ -1458,6 +1509,7 @@ section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.d
 section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li {
   text-align: justify;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 section .theme-yocity .theme-smart-tab .tab-box .tab-content .theme-content ul.decimal li b {
