@@ -843,21 +843,27 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                &.head{
-                                    background: transparent;
-                                    border: 0;
-                                    background: $linear-color-light;
-                                }
 
                                 .item-name{
                                     padding: 10px 20px;
                                     width: 200px;
+                                    color: #fff;
                                 }
 
-                                .item-desc{}
+                                .item-desc{
+                                    color: #fff;
+                                }
 
                                 .item-percent{
                                     width: 120px;
+                                    color: #fff;
+                                }
+                                &.head{
+                                    border: 0;
+                                    background: $linear-color-light;
+                                    .head{
+                                        color: $primary-color
+                                    }
                                 }
                             }
                         }
@@ -1111,19 +1117,23 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                &.head{
-                                    background: transparent;
-                                    border: 0;
-                                    background: $linear-color-light;
-                                }
 
                                 .item-no{
                                     padding: 10px 20px;
                                     width: 80px;
+                                    color: #fff;
                                 }
 
                                 .item-desc{
                                     width: calc(100% - 80px);
+                                    color: #fff;
+                                }
+                                &.head{
+                                    border: 0;
+                                    background: $linear-color-light;
+                                    .head{
+                                        color: $primary-color
+                                    }
                                 }
                             }
                         }
@@ -1467,36 +1477,39 @@ section{
                                 .item-no{
                                     padding: 10px 20px;
                                     width: 120px;
+                                    color: #fff;
                                 }
 
                                 .item-type{
                                     width: 200px;
+                                    color: #fff;
                                 }
 
                                 .item-work{
                                     width: 260px;
                                     display: inline-block;
-                                    color: #ced0ff;
+                                    color: #fff;
                                     word-break: break-word; 
                                     line-height: 1.3;
                                 }
 
-                                .item-teams{
+                                .item-teams, .item-team{
                                     padding: 10px 20px;
                                     width: 200px;
+                                    color: #fff;
                                 }
 
                                 .item-photo{
                                     width: 280px;
                                     padding: 10px;
+                                    color: #fff;
                                 }
 
                                 &.head{
-                                    background: transparent;
                                     border: 0;
                                     background: $linear-color-light;
-                                    .item-work{
-                                        color: $primary-color;
+                                    .head{
+                                        color: $primary-color
                                     }
                                 }
                             }
@@ -1620,23 +1633,28 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                &.head{
-                                    background: transparent;
-                                    border: 0;
-                                    background: $linear-color-light;
-                                }
 
                                 .item-title{
                                     padding: 10px 20px;
                                     width: calc(100% - 320px);
                                     text-align: left;
+                                    color: #fff;
                                 }
 
                                 .item-media{
                                     width: 180px;
+                                    color: #fff;
                                 }
                                 .item-date{
                                     width: 140px;
+                                    color: #fff;
+                                }
+                                &.head{
+                                    border: 0;
+                                    background: $linear-color-light;
+                                    .head{
+                                        color: $primary-color
+                                    }
                                 }
                             }
                         }
@@ -1962,6 +1980,866 @@ section{
                           
                           
                         
+                    }
+                }
+            }
+        }
+    }
+
+    .theme-event{
+        background: $secondery-color;
+        // background: #fff;
+        .theme-event-tab{
+            background: url(../img/news_bg1.png) center top no-repeat;
+            background-size: contain;
+            padding: 100px 0;
+            @media (max-width:960px){
+                background-size: auto 100px;
+                padding: 60px 0;
+            }
+            > h3{
+                background: $linear-color;
+                display: inline-block;
+                padding: 4px 12px;
+                margin: 30px 0 40px;
+                font-size: 20px;
+                font-weight: 500;
+                border-radius: 10px;
+                // border: 4px solid transparent;
+                border-radius: 12px;
+                padding: 8px;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 420px;
+                    height: 120px;
+                    background: url(../img/page-title_bg.svg) center center no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                span{
+                    display: inline-block;
+                    padding: 4px 20px;
+                    color: #fff;
+                }
+            }
+            .tab-box{
+                margin-top: 40px;
+                .event-note{
+                    text-align: center;
+                    font-size: 14px;
+                    color: #5b5b5b;
+                    @media (max-width:800px){
+                        padding: 0 10px;
+                    }
+                }
+                .tab-content{
+                    display: none;
+                }
+
+                #tab-option1:checked ~ .tab-content1,
+                #tab-option2:checked ~ .tab-content2 {
+                    display: block;
+                }
+
+                input#tab-option1, input#tab-option2{
+                    display: none;
+                }
+                label{
+                    padding: 4px 32px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    margin: 10px 4px 0;
+                    display: inline-block;
+                    @media (max-width:800px){
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option2:checked ~ .tab-option2{
+                    background: $linear-color;
+                    color: #fff;
+                    padding: 4px 32px;
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 40px;
+                    outline: 4px solid rgba(255,255,255,.5);
+                    a{
+                        color: #fff;
+                    }
+                }
+
+                .tab-content{
+                    width: 90%;
+                    max-width: 1020px;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    padding: 120px 40px;
+                    // background: rgba(225,225,225,1);
+                    border-radius: 20px;
+                    background: url(../img/intro_bg1.png) center top repeat-x,
+                    url(../img/intro_bg2.png) center bottom repeat-x $primary-color;
+                    background-size: contain;
+                    @media (max-width:960px){
+                        padding: 60px 20px;                        
+                    }
+
+                    .theme-title{
+                        h3{
+                            text-align: center;
+                        }
+                    }
+
+                    .theme-content{
+                        margin-top: 0;
+                        .form-group{
+                            margin-top: 40px;
+                            background: rgba(255,255,255,.2);
+                            padding: 20px;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        .group-title{
+                            color: #fff;
+                        }
+                        fieldset{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            margin-top: 20px;
+                            &:disabled{
+                                opacity: .8;
+                            }
+
+                            .label-title{
+                                color: #fff;
+                            }
+                            label{
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                white-space: nowrap;                                
+                                color: #fff;
+                                font-size: 16px;
+                                margin: 0;
+                                padding: 0;
+                                flex-wrap: wrap;
+                                @media (max-width:960px){
+                                    width: 100%;
+                                    margin-top: 10px;
+                                    white-space: normal;
+                                    text-align: left;
+                                }
+                                input[type="radio"], input[type="checkbox"]{
+                                    // display: inline-block;
+                                    // vertical-align: middle;
+                                    background: #fff;
+                                    padding: 10px;
+                                    border-radius: 4px;
+                                    &:checked{
+                                        background: url(../img/check.svg) center center no-repeat #fff;
+                                        background-size: 16px;
+                                        border-radius: 4px;
+                                    }
+                                }
+                                input, select{
+                                    font-size: 14px;
+                                }
+                                input[type="text"], input[type="date"]{
+                                    @media (max-width:960px){
+                                        width: 100%;
+                                    }
+                                }
+                                span{
+                                    font-size: 12px;                              
+                                    color: #909090;
+                                }
+                                p.apply{
+                                    width: calc(100% - 30px);                              
+                                    color: #fff;
+                                    font-size: 16px;
+                                    margin: 0;
+                                }
+
+                            }
+
+                            &.w100{
+                                width: 100%;
+                                label{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    input{
+                                        width: calc(100% - 120px);
+                                        @media (max-width:960px){
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            &.w50{
+                                width: 49%;
+                                @media (max-width:960px){
+                                    width: 100%;
+                                }
+                                label{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    input{
+                                        width: calc(100% - 10px);
+                                        @media (max-width:960px){
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .label-group{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                margin-top: 10px;
+
+                                label:first-child{
+                                    margin-right: 12px;
+                                }
+                                label{
+                                    margin-top: 10px;
+                                }
+                                label + label{
+                                    margin-left: 0;
+                                    margin-right: 12px;
+                                }
+                            }
+
+                            label + label{
+                                margin-left: 12px;
+                                @media (max-width:960px){
+                                    margin-left: 0;
+                                }
+                            }
+
+                            select{
+                                margin-top: 0.4rem;
+                            }
+                            
+
+                        }
+
+                        .member_group{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            .group-title{
+                                width: 100%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            > label {
+                                font-size: 18px;
+                                font-weight: 500;
+                                padding: 2px 10px;
+                                cursor: pointer;
+                                margin-right: 4px;
+                                border-radius: 4px 4px 0 0;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 10px;
+                                border: 4px solid transparent;
+                                outline: 2px solid transparent;
+                                &:checked{
+                                    color: $primary-color;
+                                    background: #e0e0e0;
+                                    border: 4px solid #474645;
+                                    outline: 2px solid #e0e0e0;
+                                }
+                            }
+
+                            .member-tab-content {
+                                display: none;
+                                width: 100%;
+                                padding: 1rem;
+                                border-top: none;
+                                @media (max-width:960px){
+                                    padding: 0;
+                                }
+                            }
+                            input[type="radio"] {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + label {
+                                color: $primary-color;
+                                background: #e0e0e0;
+                                border: 4px solid #474645;
+                                outline: 2px solid #e0e0e0;
+                            }
+                            #member-tab1:checked ~ #member-content1,
+                            #member-tab2:checked ~ #member-content2,
+                            #member-tab3:checked ~ #member-content3,
+                            #member-tab4:checked ~ #member-content4,
+                            #member-tab5:checked ~ #member-content5,
+                            #member-tab6:checked ~ #member-content6 {
+                                display: block;
+                            }
+                            .member_role{
+                                // width:60px;
+                                color: #fff;
+                                text-align: center;
+                                background: rgba(255,255,255,.4);
+                                display: inline-block;
+                                padding: 0 10px;
+                                margin-left: 0;
+                                border-radius: 10px;
+                                float: left;
+                                margin-top: 20px;
+                            }
+                            .member{
+                                width: 100%;
+                                display: inline-flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                fieldset{
+                                    width: 32%;
+                                    margin-top: 4px;
+                                    @media (max-width:960px){
+                                        width: 100%;
+                                    }
+                                    
+
+                                    &.w100{
+                                        width: 100%;
+                                    }
+                                }
+                                h6, .label-title{
+                                    width: 100%;
+                                    text-align: left;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    margin-top: 10px;
+                                }
+                                label{
+                                    width: 100%;
+                                    &.inline{
+                                        width: auto;
+                                        height: 34px;
+                                    }
+                                }
+                                
+                                input[type="text"], input[type="date"], input[type="email"], select{
+                                    width: 100%;
+                                    border-radius: 4px;
+                                }
+
+                                label[for="file"]{
+                                    margin-top: 10px;
+                                }
+
+                                .custom-file-input {
+                                    display: none;
+                                }
+                                
+                                .custom-file-label {
+                                    width: 200px;
+                                    display: inline-block;
+                                    background: $linear-color-light;
+                                    color: $primary-color;
+                                    padding: 4px 10px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    margin-left: 20px;
+                                    span{
+                                        font-size: 20px;
+                                        height: 24px;
+                                        vertical-align: middle;
+                                        color: $primary-color;
+                                    }
+                                    &:hover{
+                                        opacity: .9;
+                                    }
+                                }
+                                .inline{
+                                    width: auto;
+                                    display: inline-block;
+                                }
+                                p.note{
+                                    font-size: 14px;                     
+                                    color: #909090;
+                                    margin-top: 10px;
+                                    margin-left: 12px;
+                                }
+                            }
+                        }
+
+                        .teacher_group{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            .group-title{
+                                width: 100%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            > label {
+                                font-size: 18px;
+                                font-weight: 500;
+                                padding: 2px 10px;
+                                cursor: pointer;
+                                margin-right: 4px;
+                                border-radius: 4px 4px 0 0;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 10px;
+                                border: 4px solid transparent;
+                                outline: 2px solid transparent;
+                                &:checked{
+                                    color: $primary-color;
+                                    background: #e0e0e0;
+                                    border: 4px solid #474645;
+                                    outline: 2px solid #e0e0e0;
+                                }
+                            }
+
+                            .teacher-tab-content {
+                                display: none;
+                                width: 100%;
+                                padding: 1rem;
+                                border-top: none;
+                                @media (max-width:960px){
+                                    padding: 0;
+                                }
+                            }
+                            input[type="radio"] {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + label {
+                                color: $primary-color;
+                                background: #e0e0e0;
+                                border: 4px solid #474645;
+                                outline: 2px solid #e0e0e0;
+                            }
+                            #teacher-tab1:checked ~ #teacher-content1,
+                            #teacher-tab2:checked ~ #teacher-content2,
+                            #teacher-tab3:checked ~ #teacher-content3,
+                            #teacher-tab4:checked ~ #teacher-content4,
+                            #teacher-tab5:checked ~ #teacher-content5,
+                            #teacher-tab6:checked ~ #teacher-content6 {
+                                display: block;
+                            }
+                            .teacher_role{
+                                // width:60px;
+                                color: #fff;
+                                text-align: center;
+                                background: rgba(255,255,255,.4);
+                                display: inline-block;
+                                padding: 0 10px;
+                                margin-left: 0;
+                                border-radius: 10px;
+                                float: left;
+                                margin-top: 20px;
+                            }
+                            .teacher{
+                                width: 100%;
+                                display: inline-flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                fieldset{
+                                    width: 32%;
+                                    margin-top: 4px;
+                                    @media (max-width:960px){
+                                        width: 100%;
+                                        margin-left: 0;
+                                    }
+
+                                    &.w100{
+                                        width: 100%;
+                                    }
+                                }
+                                h6{
+                                    width: 100%;
+                                    text-align: left;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    margin-top: 10px;
+                                }
+                                label{
+                                    width: 100%;
+                                    &.inline{
+                                        width: auto;
+                                        height: 34px;
+                                    }
+                                }
+                                
+                                input[type="text"]{
+                                    width: 100%;
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+
+                        .staff_group{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            .group-title{
+                                width: 100%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            > label {
+                                font-size: 18px;
+                                font-weight: 500;
+                                padding: 2px 10px;
+                                cursor: pointer;
+                                margin-right: 4px;
+                                border-radius: 4px 4px 0 0;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 10px;
+                                border: 4px solid transparent;
+                                outline: 2px solid transparent;
+                                &:checked{
+                                    color: $primary-color;
+                                    background: #e0e0e0;
+                                    border: 4px solid #474645;
+                                    outline: 2px solid #e0e0e0;
+                                }
+                            }
+
+                            .staff-tab-content {
+                                display: none;
+                                width: 100%;
+                                padding: 1rem;
+                                border-top: none;
+                                @media (max-width:960px){
+                                    padding: 0;
+                                }
+                            }
+                            input[type="radio"] {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + label {
+                                color: $primary-color;
+                                background: #e0e0e0;
+                                border: 4px solid #474645;
+                                outline: 2px solid #e0e0e0;
+                            }
+                            #staff-tab1:checked ~ #staff-content1,
+                            #staff-tab2:checked ~ #staff-content2,
+                            #staff-tab3:checked ~ #staff-content3 {
+                                display: block;
+                            }
+                            .staff_role{
+                                // width:60px;
+                                color: #fff;
+                                text-align: center;
+                                background: rgba(255,255,255,.4);
+                                display: inline-block;
+                                padding: 0 10px;
+                                margin-left: 0;
+                                border-radius: 10px;
+                                float: left;
+                                margin-top: 20px;
+                            }
+                            .staff{
+                                width: 100%;
+                                display: inline-flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                // align-content: flex-start;
+                                fieldset{
+                                    width: 49%;
+                                    margin-top: 4px;
+                                    display: flex;
+                                    align-content: flex-start;
+                                    @media (max-width:960px){
+                                        width: 100%;
+                                    }
+
+                                    &.w100{
+                                        width: 100%;
+                                    }
+                                }
+                                h6, .label-title{
+                                    width: 100%;
+                                    text-align: left;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    margin-top: 10px;
+
+                                    p.note{
+                                        font-size: 14px;   
+                                        line-height: 1;                  
+                                        color: #909090;
+                                        margin-top: 0px;
+                                        margin-left: 12px;
+                                        display: inline-block;
+                                    }
+                                }
+                                label{
+                                    width: 100%;
+                                    &.inline{
+                                        width: auto;
+                                        height: 34px;
+                                    }
+                                }
+                                
+                                input[type="text"], input[type="date"], input[type="email"], select{
+                                    width: 100%;
+                                    border-radius: 4px;
+                                }
+
+                                label[for="file"]{
+                                    margin-top: 10px;
+                                }
+
+                                .custom-file-input {
+                                    display: none;
+                                }
+                                
+                                .custom-file-label {
+                                    width: 200px;
+                                    display: inline-block;
+                                    background: $linear-color-light;
+                                    color: $primary-color;
+                                    padding: 4px 10px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    margin-left: 20px;
+                                    span{
+                                        font-size: 20px;
+                                        height: 24px;
+                                        vertical-align: middle;
+                                        color: $primary-color;
+                                    }
+                                    &:hover{
+                                        opacity: .9;
+                                    }
+                                }
+                                .inline{
+                                    width: auto;
+                                    display: inline-block;
+                                }
+                                p.note{
+                                    font-size: 14px;                     
+                                    color: #909090;
+                                    margin-top: 10px;
+                                    margin-left: 12px;
+                                }
+                            }
+                        }
+
+                        .process_group{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            h4{
+                                width: 100%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                                color: #fff;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+
+                                fieldset{
+                                    margin-top: 0;
+                                }
+
+                                fieldset + fieldset{
+                                    margin-left: 40px;
+                                }
+                                input[type="radio"]{
+                                    background: transparent;
+                                    border: 1px solid #fff;
+                                    padding: 10px;
+                                    border-radius: 4px;
+                                    &:checked{
+                                        background: url(../img/check_white.svg) center center no-repeat;
+                                        background-size: 16px;
+                                        border-radius: 4px;
+                                    }
+                                }
+                            }
+                            > label {
+                                font-size: 18px;
+                                font-weight: 500;
+                                padding: 2px 10px;
+                                cursor: pointer;
+                                margin-right: 4px;
+                                border-radius: 4px 4px 0 0;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 10px;
+                                border: 4px solid transparent;
+                                outline: 2px solid transparent;
+                                &:checked{
+                                    color: $primary-color;
+                                    background: #e0e0e0;
+                                    border: 4px solid #474645;
+                                    outline: 2px solid #e0e0e0;
+                                }
+                            }
+                            .process_content{
+                                width: 100%;
+                                display: inline-flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                ol{
+                                    width: 100%;
+                                    text-align: left;
+                                    p{
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        color: #fff;
+                                    }
+                                    li{
+                                        font-size: 13px;
+                                        color: #fff;
+                                    }
+                                }
+                                fieldset{
+                                    width: 49%;
+                                    margin-top: 4px;
+                                    @media (max-width:960px){
+                                        width: 100%;
+                                    }
+
+                                    &.w100{
+                                        width: 100%;
+                                    }
+                                }
+                                h6, .label-title{
+                                    width: 100%;
+                                    text-align: left;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    margin-top: 10px;
+                                }
+                                label{
+                                    width: 100%;
+                                    &.inline{
+                                        width: auto;
+                                        height: 34px;
+                                    }
+                                }
+                                
+                                textarea{
+                                    width: 100%;
+                                    height: 150px;
+                                    border-radius: 4px;
+                                    resize: none;
+                                }
+
+                                label[for="file"]{
+                                    margin-top: 10px;
+                                }
+
+                                .custom-file-input {
+                                    display: none;
+                                }
+                                
+                                .custom-file-label, .download{
+                                    // width: 200px;
+                                    font-weight: 500;
+                                    display: inline-block;
+                                    background: $linear-color-light;
+                                    color: $primary-color;
+                                    padding: 4px 10px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    margin-left: 20px;
+                                    span{
+                                        font-size: 20px;
+                                        height: 24px;
+                                        vertical-align: middle;
+                                        color: $primary-color;
+                                    }
+                                    &:hover{
+                                        opacity: .9;
+                                    }
+                                }
+                                .inline{
+                                    width: auto;
+                                    display: inline-block;
+                                }
+                                p.note{
+                                    font-size: 14px;                     
+                                    color: #909090;
+                                    margin-top: 10px;
+                                    margin-left: 12px;
+                                }
+                            }
+                        }
+
+                        .btn-group{
+                            margin-top: 40px;
+                            button{
+                                border-radius: 4px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                background: $linear-color-light;
+                                padding: 10px 28px;
+                                transition: all .3s;
+                                @media (max-width:960px){
+                                    margin-top: 10px;
+                                }
+                                &.outline{
+                                    border: 1px solid $secondery-color;
+                                    background: transparent;
+                                    color: $secondery-color;
+                                }
+                                &:hover{
+                                    cursor: pointer;
+                                    background: $linear-color-light;
+                                    opacity: .8;
+                                    &.outline{
+                                        color: $primary-color;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            button + button{
+                                margin-left: 20px;
+                            }
+                        }
                     }
                 }
             }
