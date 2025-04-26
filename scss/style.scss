@@ -2226,12 +2226,16 @@ section{
                                 }
                             }
 
-                            label + label{
-                                margin-left: 12px;
-                                @media (max-width:960px){
-                                    margin-left: 0;
-                                }
+                            label{
+                                margin-right: 12px;
                             }
+
+                            // label + label{
+                            //     margin-left: 12px;
+                            //     @media (max-width:960px){
+                            //         margin-left: 0;
+                            //     }
+                            // }
 
                             select{
                                 margin-top: 0.4rem;

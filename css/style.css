@@ -2956,14 +2956,8 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
   margin-right: 12px;
 }
 
-section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label + label {
-  margin-left: 12px;
-}
-
-@media (max-width: 960px) {
-  section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label + label {
-    margin-left: 0;
-  }
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label {
+  margin-right: 12px;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset select {
