@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+.fixed_area{
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        li{
+            background: $linear-color;
+            border-radius: 40px 0 0 40px;
+            border: 5px solid rgba(255,255,255,.3);
+            border-right: 0;
+            a{
+                color: #fff;
+                padding: 10px 10px 10px 20px;
+            }
+        }
+    }
+}
 header{
     width: 100%;
     display: flex;
@@ -188,7 +208,7 @@ section{
 
     .container{
         width: 90%;
-        max-width: 1440px;
+        max-width: 1360px;
         margin: 0 auto;
     }
 
@@ -229,8 +249,6 @@ section{
         }
     }
 
-    .theme-kv{}
-
     .theme-news{
         background: url(../img/news_bg1.png) center top no-repeat,
                     url(../img/news_bg2.png) center bottom no-repeat;
@@ -239,8 +257,6 @@ section{
         @media (max-width:960px){
             background-size: auto 100px;
             padding: 120px 0;
-        }
-        .theme-title{
         }
         .theme-content{
             ul{
@@ -312,7 +328,7 @@ section{
     .theme-newspage{
         .container{
             width: 90%;
-            max-width: 960px;
+            max-width: 1080px;
             margin: 0 auto;
             h4,h5,h6{
                 margin-top: 32px;
@@ -393,9 +409,6 @@ section{
                         align-self: stretch;
                     }
                 }
-                .item + .item{
-                    // margin-top: 40px;
-                }
             }
         }
     }
@@ -403,7 +416,6 @@ section{
     .theme-video{
         padding: 80px 0;
 
-        .theme-title{}
         .theme-content{
             display: flex;
             justify-content: space-between;
@@ -672,7 +684,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -988,7 +1000,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -1046,6 +1058,70 @@ section{
                                 margin-left: 0px;
                                 b{
                                     color: #fff;
+                                }
+                            }
+                        }
+
+                        ul.rule{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            margin: 0;
+                            li{
+                                width: 220px;
+                                display: flex;
+                                flex-direction: column;
+                                line-height: 1.4;
+                                h4{
+                                    border: 1px solid #404040;
+                                    padding: 4px 12px;
+                                    text-align: center;
+                                    margin-bottom: 12px;
+
+                                }
+                                &:nth-child(1){
+                                    color: #f48b8b;
+                                    h4{
+                                        color: #f48b8b;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    color:#ffe27c;
+                                    h4{
+                                        color: #ffe27c;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    color: #8ef492;
+                                    h4{
+                                        
+                                        color: #8ef492;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    color:#7cfff5;
+                                    h4{
+                                        color: #7cfff5;
+                                    }
+                                }
+                                &:nth-child(5){
+                                    color:#b3abf4;
+                                    h4{
+                                        color: #b3abf4;
+                                    }
+                                }
+                                &:nth-child(6){
+                                    color:#fca775;
+                                    h4{
+                                        color: #fca775;
+                                    }
+                                }
+                                &:nth-child(7){
+                                    width: 460px;
+                                    color:#e081cb;
+                                    h4{
+                                        color: #e081cb;
+                                    }
                                 }
                             }
                         }
@@ -1157,6 +1233,49 @@ section{
                                 }
                             }
                         }
+                        .schedule{
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 2%;
+                            h4{
+                                width: 100%;
+                                color: #fff;
+                                margin-bottom: 12px;
+                            }
+                            li{
+                                width: 32%;
+                                border: 1px solid #404040;
+                                margin: 0 0 2% 0;
+                                padding: 12px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                .step{
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    line-height: 1.6;
+                                    background: #fff;
+                                    border-radius: 20px;
+                                    color: $primary-color;
+                                }
+                                .topic{
+                                    width: calc(100% - 42px);
+                                    font-size: 20px;
+                                    line-height: 1.4;
+                                    color: #fff;
+                                    margin-left: 12px;
+                                }
+                                .time{
+                                    color: #fff;
+                                    margin-left: 42px;
+                                    margin-top: 12px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1260,7 +1379,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -1368,17 +1487,12 @@ section{
             }
             .tab-box{
                 margin-top: 40px;
-                .tab-content{
+                .tab-content, .tab-content-inner{
                     display: none;
                 }
 
                 #tab-option1:checked ~ .tab-content1,
-                #tab-option2:checked ~ .tab-content2,
-                #tab-option3:checked ~ .tab-content3,
-                #tab-option4:checked ~ .tab-content4,
-                #tab-option5:checked ~ .tab-content5,
-                #tab-option6:checked ~ .tab-content6,
-                #tab-option7:checked ~ .tab-content7 {
+                #tab-option2:checked ~ .tab-content2 {
                     display: block;
                 }
 
@@ -1404,12 +1518,7 @@ section{
                 }
 
                 #tab-option1:checked ~ .tab-option1,
-                #tab-option2:checked ~ .tab-option2,
-                #tab-option3:checked ~ .tab-option3,
-                #tab-option4:checked ~ .tab-option4,
-                #tab-option5:checked ~ .tab-option5,
-                #tab-option6:checked ~ .tab-option6,
-                #tab-option7:checked ~ .tab-option7{
+                #tab-option2:checked ~ .tab-option2{
                     background: $linear-color;
                     color: #fff;
                     padding: 4px 32px;
@@ -1424,7 +1533,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -1500,14 +1609,22 @@ section{
                                 }
 
                                 .item-photo{
-                                    width: 280px;
+                                    width: 180px;
+                                    padding: 10px;
+                                    color: #fff;
+                                }
+
+                                .item-awards{
+                                    width: 120px;
                                     padding: 10px;
                                     color: #fff;
                                 }
 
                                 &.head{
+                                    line-height: 1.6;
                                     border: 0;
                                     background: $linear-color-light;
+                                    padding: 6px 0;
                                     .head{
                                         color: $primary-color
                                     }
@@ -1562,8 +1679,15 @@ section{
             }
             .tab-box{
                 margin-top: 40px;
-                .tab-content{
-                    // display: none;
+                .tab-content, .tab-content-inner{
+                    display: none;
+                }
+
+                #tab-option1:checked ~ .tab-content1,
+                #tab-option2:checked ~ .tab-content2,
+                #tab-option-inner1:checked ~ .tab-content-inner1,
+                #tab-option-inner2:checked ~ .tab-content-inner2 {
+                    display: block;
                 }
 
                 input[type="radio"]{
@@ -1586,10 +1710,44 @@ section{
                     }
 
                 }
+                .tab-option-inner1, .tab-option-inner2{
+                    color: #fff;
+                    font-size: 18px;
+                }
+
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option2:checked ~ .tab-option2{
+                    background: $linear-color;
+                    color: #fff;
+                    padding: 4px 32px;
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 40px;
+                    outline: 4px solid rgba(255,255,255,.5);
+                    a{
+                        color: #fff;
+                    }
+                }
+                #tab-option-inner1:checked ~ .tab-option-inner1,
+                #tab-option-inner2:checked ~ .tab-option-inner2{
+                    background: $linear-color-light;
+                    color: #292929;
+                    border: 4px solid #474645;
+                    outline: 2px solid $secondery-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 4px 20px;
+                    display: inline-block;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    a{
+                        color: #fff;
+                    }
+                }
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -1656,6 +1814,33 @@ section{
                                         color: $primary-color
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+                .tab-content-inner{
+                        margin-top: 40px;
+                    .theme-content{
+                        .table-content{
+                            .item{
+                                display: flex;
+                                justify-content: space-around;
+                                gap: 12px;
+                                .item-year, .item-awards, .item-team, .item-type, .item-name{
+                                    width: 20%;
+                                    padding: 10px;
+                                    color: #fff;
+                                    &.w50{
+                                        width: 50%;
+                                    }
+                                }
+                                &.head{
+                                    line-height: 1.6;
+                                    border: 0;
+                                    // background: $linear-color-light;
+                                    padding: 6px 0;
+                                }
+
                             }
                         }
                     }
@@ -1730,7 +1915,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
@@ -1891,7 +2076,7 @@ section{
 
                 .tab-content{
                     width: 90%;
-                    max-width: 960px;
+                    max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
                     padding: 120px 60px;
