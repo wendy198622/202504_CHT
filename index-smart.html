@@ -23,40 +23,7 @@
 </head>
 
 <body>
-    <div class="fixed_area">
-        <ul>
-            <li>
-                <a href="member.html">立即報名</a>
-            </li>
-            <li>
-                <a href="index-smart.html">智慧創新<br>應用大賽</a>
-            </li>
-            <li>
-                <a href="index-smart.html">5G加速器<br>徵選活動</a>
-            </li>
-        </ul>
-    </div>
-    <header>
-        <div class="logo">
-            <img src="img/logo_white.svg" alt="">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li class="active gradient-text"><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
-                <li><a href="index-5g.html" target="_blank">5G加速器徵選</a></li>
-                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
-                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
-                <li><a href="media-coverage.html" target="_blank">歷屆資料</a></li>
-                <li><a href="member.html" target="_blank">參賽專區</a></li>
-            </ul>
-        </nav>
-        <button id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+    <header id="header"></header>
 
     <section>
         <div class="section theme theme-kv">
@@ -73,8 +40,11 @@
                 <div class="tab-box">
                     <form>
                         
-                        <input type="radio" name="smart-tab" id="tab-option1">
+                        <input type="radio" name="smart-tab" id="tab-option1" checked>
                         <label for="tab-option1" class="tab-option1">徵件對象/條件</label>
+
+                        <input type="radio" name="smart-tab" id="tab-option8">
+                        <label for="tab-option8" class="tab-option8">競賽流程</label>
 
                         <input type="radio" name="smart-tab" id="tab-option2">
                         <label for="tab-option2" class="tab-option2">競賽主題</label>
@@ -85,10 +55,10 @@
                         <input type="radio" name="smart-tab" id="tab-option4">
                         <label for="tab-option4" class="tab-option4">競賽獎金</label>
 
-                        <input type="radio" name="smart-tab" id="tab-option5" checked>
-                        <label for="tab-option5" class="tab-option5">文件下載</label>
-
                         <br>
+
+                        <input type="radio" name="smart-tab" id="tab-option5">
+                        <label for="tab-option5" class="tab-option5">文件下載</label>
 
                         <input type="radio" name="smart-tab" id="tab-option6">
                         <label for="tab-option6" class="tab-option6"><a href="index-yocity.html">元宇宙應用特別獎</a></label>
@@ -103,12 +73,86 @@
                                 <h3 class="gradient-text">徵件對象/條件</h3>
                             </div>
                             <div class="theme-content">
-                                <ul>
-                                    <li>校園組：在校學生或應屆畢業學生（可跨校、跨年級組隊報名），並填寫指導老師至多2位。</li>
-                                    <li>社會組：社會人士、一般個人、新創團隊、企業組織、相關產業人士。</li>
+                                <div class="type">
+                                    <div class="list">
+                                        <div class="subject">校園組</div>
+                                        <p>在校學生或應屆畢業學生（可跨校、跨年級組隊報名），並填寫指導老師至多2位。</p>
+                                    </div>
+                                    <div class="list">
+                                        <div class="subject">社會組</div>
+                                        <p>社會人士、一般個人、新創團隊、企業組織、相關產業人士。</p>
+                                    </div>
+                                </div>
+                                <ul class="type_desc">
                                     <li>每隊1~6人組隊，團隊成員中需至少一位具中華民國（臺灣）國籍。</li>
-                                    <li>每隊須有1人為團隊代表人，代表人需負責與執行單位聯繫、確認參賽文件與獎金領取</li>
+                                    <li>每隊須有1人為團隊代表人，代表人需負責與執行單位聯繫、確認參賽文件與獎金領取。</li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-content8">
+                            <div class="theme-title">
+                                <h3 class="gradient-text">競賽流程</h3>
+                            </div>
+                            <div class="theme-content">
+                                <div class="flow">
+                                    <div class="title">
+                                        <div class="date">9/22(一)12:00截止</div>
+                                        <div class="topic">報名</div>
+                                    </div>
+                                    <div class="content">
+                                        <ol>
+                                            <li>線上註冊帳號密碼並填寫團隊報名資料</li>
+                                            <li>至參賽專區上傳「作品提案規劃書」(必繳)、「身分證明文件」(必繳)與「作品影片」(加分項)</li>
+                                            <li>作品提案規劃書」請以A4規格製作（WORD、PDF檔案格式擇一），需標明頁碼。內容字體不得小於12pt，建議在15頁以內（不含封面、封底、目錄與參考書目），繳交時以隊伍名稱為檔名之檔案進行上傳，檔案大小不得超過20MB</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="flow">
+                                    <div class="title">
+                                        <div class="date">10/9（四）</div>
+                                        <div class="topic">決選入圍公告</div>
+                                    </div>
+                                    <div class="content">
+                                        <ol>
+                                            <li>評審團依據初賽繳件資料進行初選評選，並依評分標準評選出校園組及社會組決賽入圍團隊</li>
+                                            <li>入圍決賽隊伍需至參賽專區上傳「決賽參賽同意書」及「決賽簡報」</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="flow">
+                                    <div class="title">
+                                        <div class="date">11/1（六）</div>
+                                        <div class="topic">於中華電信板橋學院總決賽</div>
+                                    </div>
+                                    <div class="content">
+                                        <ol>
+                                            <li>每隊12分鐘為限，含現場簡報、作品Demo及評審提問</li>
+                                            <li>團隊須至少一位成員出席進行簡報，未出席者視為棄賽</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="flow">
+                                    <div class="title">
+                                        <div class="date">11/3（一）</div>
+                                        <div class="topic">入圍獲獎公告</div>
+                                    </div>
+                                    <div class="content">
+                                        <ol>
+                                            <li>主辦單位以信件及電話通知入圍獲獎隊伍，並邀請出席頒獎典禮暨成果發表</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="flow">
+                                    <div class="title">
+                                        <div class="date">暫定 11/27（四）</div>
+                                        <div class="topic">頒獎典禮暨成果發表</div>
+                                    </div>
+                                    <div class="content">
+                                        <ol>
+                                            <li>現場頒獎並公布名次，獲獎隊伍作品成果展攤展示</li>
+                                        </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-content tab-content2">
@@ -155,14 +199,11 @@
                                             </span>
                                         </div>
                                         <div class="more_content">
-                                            <p>以5G為核心，整合各項垂直應用技術，推出具中華電信利基的5G智慧製造解決方案。</p>
+                                            <p>以5G為核心，透過Gen AI提供之智慧製造解決方案。</p>
                                             <p>應用內容建議發展方向如下（不限此範圍）：</p>
                                             <ul class="list">
-                                                <li>5G生產戰情管理作業平台</li>
-                                                <li>5G + AIoT感測系統</li>
-                                                <li>AI視覺檢測應用</li>
-                                                <li>5G AI工安風險偵測應用</li>
-                                                <li>5G無人搬運車應用</li>
+                                                <li>5G生產管理平台 (機聯網、戰情中心、能源管理…等)</li>
+                                                <li>5G AI應用 (視覺檢測、工安管控、遠距協作…等)</li>
                                             </ul>
                                         </div>
                                     </li>
@@ -234,7 +275,7 @@
                                             <ul class="list">
                                                 <li>智慧道路與偵防：號控輔助交通紓解、道路安全服務、弱勢與偏鄉無礙運輸、AI自動化科技偵防巡檢應用。</li>
                                                 <li>智慧海港與櫃場：無人船、水下海事機器人等無人載具巡檢應用、櫃場智慧化、港區周邊交通疏導、先進物流管理。</li>
-                                                <li>智慧空中巡檢應用：無人機空中智慧巡檢應用（含AI影像或數據分析、雲端即時2D拼接或3D建模技術）。</li>
+                                                <li>智慧空中巡檢應用：無人機空中智慧巡檢應用（含AI影像辨識或數據分析）。</li>
                                             </ul>
                                         </div>
                                     </li>
@@ -266,7 +307,7 @@
                                         <div class="top">
                                             <div class="photo"><img src="img/icon_home.svg" alt=""></div>
                                             <div class="info">
-                                                <h4>智慧生活<br>（個家數產處）</h4>
+                                                <h4>智慧生活</h4>
                                             </div>
                                         </div>
                                         <div class="more_topic">活動內容
@@ -278,7 +319,7 @@
                                             <p>聚焦於一般消費者所使用之娛樂、便利、安全等智慧生活應用。</p>
                                             <p>應用內容建議發展方向如下（不限此範圍）：</p>
                                             <ul class="list">
-                                                <li>創新娛樂應用：運用影音串流、虛擬實境、擴增實境等技術，打造創造體驗的娛樂服務，例如沉浸式影音/遊戲、GenAI沉浸式內容創造等應用。</li>
+                                                <li>創新娛樂應用：運用AI影音串流、虛擬實境、擴增實境等技術，打造創造體驗的娛樂服務。 </li>
                                                 <li>AI智慧生活應用：應用現有AI技術提供消費者在居家、健康或出行等創新應用，如智能助理、自動化家電、健康監測、生活日記等，提升生活便利性與體驗。</li>
                                             </ul>
                                         </div>
@@ -346,6 +387,11 @@
                                         <div class="item-desc">方案是否符合數位永續發展趨勢</div>
                                         <div class="item-percent">10%</div>
                                     </div>
+                                    <ul class="smart-desc">
+                                        <li>完整繳交初賽資料之團隊，均可向執行單位申請參賽證明。</li>
+                                        <li>決賽評審團將由業界及學界專業評審組成，入選決賽隊伍決賽指定時間與地點進行現場簡報及作品Demo，報告時間以12分鐘為限。</li>
+                                        <li>如使用中華電信 YoCity 元宇宙平台(插入超連結)來開發作品之參賽團隊，即可角逐「元宇宙應用特別獎」。該獎項由專業評審團進行獨立評選，不影響其他競賽獎項評選。(該獨立獎項不適用以上評分規則。提交初賽資料與作品時，請附加簡要技術說明，介紹如何運用 YoCity 元宇宙技術，並於評分期間不可進行任何修改變更平台作品之操作。)</li>
+                                    </ul>
                                 </div>
                             </div>                                   
                         </div>
@@ -482,27 +528,7 @@
                 
             </div>
     </section>
-    <footer>
-        <div class="company_info">
-            <div class="logo">
-                <img src="img/logo_white.svg" alt="">
-            </div>
-            <div class="info">
-                <ul>
-                    <li>客服電話：(02)2325-7188#987</li>
-                    <li>客服信箱 : CHT-5G@smartfun.com.tw</li>
-                    <li>聯絡時間：週一至週五10:00~17:00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="company_social">
-            <ul>
-                <li><a href="#"><img src="img/icon-fb.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-line.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-yt.svg" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
 </body>
 
@@ -511,6 +537,9 @@
     $(document).ready(function () {
 
         new WOW().init();
+
+        $('#header').load('page/header.html');
+        $('#footer').load('page/footer.html');
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏
@@ -547,6 +576,16 @@
         $(".set-height").height(maxHeight);
     });
 
+    //tab 切換
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash;
+        if (hash) {
+        const targetTab = document.querySelector(`input[type="radio"]${hash}`);
+        if (targetTab) {
+            targetTab.checked = true;
+        }
+        }
+    });
 
 </script>
 

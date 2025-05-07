@@ -23,40 +23,7 @@
 </head>
 
 <body>
-    <div class="fixed_area">
-        <ul>
-            <li>
-                <a href="member.html">立即報名</a>
-            </li>
-            <li>
-                <a href="index-smart.html">智慧創新<br>應用大賽</a>
-            </li>
-            <li>
-                <a href="index-smart.html">5G加速器<br>徵選活動</a>
-            </li>
-        </ul>
-    </div>
-    <header>
-        <div class="logo">
-            <img src="img/logo_white.svg" alt="">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
-                <li><a href="index-5g.html" target="_blank">5G加速器徵選</a></li>
-                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
-                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li class="active gradient-text"><a href="results-announcement.html" target="_blank">名單公告</a></li>
-                <li><a href="media-coverage.html" target="_blank">歷屆資料</a></li>
-                <li><a href="member.html" target="_blank">參賽專區</a></li>
-            </ul>
-        </nav>
-        <button id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+    <header id="header"></header>
 
     <section>
         <div class="section theme theme-result">
@@ -69,7 +36,7 @@
                         <label for="tab-option1" class="tab-option1">入圍決選名單</label>
 
                         <input type="radio" name="smart-tab" id="tab-option2" checked>
-                        <label for="tab-option2" class="tab-option2">獲獎名單</label>
+                        <label for="tab-option2" class="tab-option2">獲獎/入選名單</label>
 
                         
                         <div class="tab-content tab-content1">
@@ -82,20 +49,20 @@
                                 <div class="table-content">
                                     <div class="item head">
                                         <div class="item-no head">決選編號</div>
-                                        <div class="item-type head">組別（學生組／社會組）</div>
-                                        <div class="item-team head">團隊名稱</div>
+                                        <div class="item-type head">組別<br>（學生組／社會組）</div>
+                                        <div class="item-unit head">團隊名稱</div>
                                         <div class="item-work head">作品名稱</div>
                                     </div>
                                     <div class="item">
                                         <div class="item-no">123</div>
                                         <div class="item-type">社會組</div>
-                                        <div class="item-team">ABCABC</div>
+                                        <div class="item-unit">ABCABC</div>
                                         <div class="item-work">RRRRRRRR</div>
                                     </div>
                                     <div class="item">
                                         <div class="item-no">123</div>
                                         <div class="item-type">社會組</div>
-                                        <div class="item-team">ABCABC</div>
+                                        <div class="item-unit">ABCABC</div>
                                         <div class="item-work">RRRRRRRR</div>
                                     </div>
                                 </div>
@@ -103,17 +70,17 @@
                                 <div class="table-content">
                                     <div class="item head">
                                         <div class="item-no head">決選編號</div>
-                                        <div class="item-team head">公司名稱</div>
+                                        <div class="item-unit head">公司名稱</div>
                                         <div class="item-work head">作品名稱</div>
                                     </div>
                                     <div class="item">
                                         <div class="item-no">123</div>
-                                        <div class="item-team">ABCABC</div>
+                                        <div class="item-unit">ABCABC</div>
                                         <div class="item-work">RRRRRRRR</div>
                                     </div>
                                     <div class="item">
                                         <div class="item-no">123</div>
-                                        <div class="item-team">ABCABC</div>
+                                        <div class="item-unit">ABCABC</div>
                                         <div class="item-work">RRRRRRRR</div>
                                     </div>
                                 </div>
@@ -121,55 +88,42 @@
                         </div>
                         <div class="tab-content tab-content2">
                             <div class="theme-title">
-                                <h3 class="gradient-text">獲獎/入圍名單</h3>
+                                <h3 class="gradient-text">獲獎/入選名單</h3>
                             </div>
                             <div class="theme-content">
                                 <!-- <p>決選入圍注意事項說明：提供文字輸入欄位</p> -->
                                 <div class="table-topic">智慧創新應用大賽</div>
                                 <div class="table-content">
                                     <div class="item head">
-                                        <!-- <div class="item-no head">決選編號</div> -->
                                         <div class="item-type head">組別<br>（學生組／社會組）</div>
-                                        <div class="item-team head">團隊名稱</div>
-                                        <div class="item-work head">作品簡介</div>
                                         <div class="item-awards head">獎項</div>
-                                        <div class="item-photo head">獲獎照片</div>
+                                        <div class="item-team head">團隊名稱</div>
+                                        <div class="item-unit head">單位/學校</div>
+                                        <div class="item-name head">參賽者</div>
+                                        <div class="item-name head">指導老師</div>
+                                        <div class="item-photo head">入選照片</div>
                                     </div>
                                     <div class="item">
-                                        <!-- <div class="item-no">123</div> -->
                                         <div class="item-type">社會組</div>
+                                        <div class="item-awards">第一名</div>
                                         <div class="item-team">ABCABC</div>
-                                        <div class="item-work">RRRRRRRR</div>
-                                        <div class="item-awards head">第一名</div>
-                                        <div class="item-photo head"><img src="img/temp-photo.png" alt=""></div>
+                                        <div class="item-unit">xxxxxxxxxx公司</div>
+                                        <div class="item-name">陳Ｏ明<br>黃Ｏ明</div>
+                                        <div class="item-name">陳Ｏ明<br>黃Ｏ明</div>
+                                        <div class="item-photo"><img src="img/temp-photo.png" alt=""></div>
                                     </div>
                                     <div class="item">
-                                        <!-- <div class="item-no">123</div> -->
                                         <div class="item-type">社會組</div>
+                                        <div class="item-awards">第一名</div>
                                         <div class="item-team">ABCABC</div>
-                                        <div class="item-work">RRRRRRRR</div>
-                                        <div class="item-awards head">第二名</div>
-                                        <div class="item-photo head"><img src="img/temp-photo.png" alt=""></div>
+                                        <div class="item-unit">xxxxxxxxxx公司</div>
+                                        <div class="item-name">陳Ｏ明<br>黃Ｏ明</div>
+                                        <div class="item-name">陳Ｏ明<br>黃Ｏ明</div>
+                                        <div class="item-photo"><img src="img/temp-photo.png" alt=""></div>
                                     </div>
                                 </div>
                                 <div class="table-topic">5G加速器徵選活動</div>
-                                <div class="table-content">
-                                    <div class="item head">
-                                        <div class="item-teams head">入選團隊</div>
-                                        <div class="item-work head">作品簡介</div>
-                                        <div class="item-photo head">獲獎照片</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-teams">ABCABC</div>
-                                        <div class="item-work">RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</div>
-                                        <div class="item-photo"><img src="img/temp-photo.png" alt=""></div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-teams">BBBBB</div>
-                                        <div class="item-work">RRRRRRRR</div>
-                                        <div class="item-photo"><img src="img/temp-photo.png" alt=""></div>
-                                    </div>
-                                </div>                                
+                                <p>5G加速器入圍決賽團隊已電話及信件通知各團隊聯絡人，如有任何不清楚之處，請洽競賽客服。</p>                              
                             </div>
                         </div>
 
@@ -180,27 +134,7 @@
                 
             </div>
     </section>
-    <footer>
-        <div class="company_info">
-            <div class="logo">
-                <img src="img/logo_white.svg" alt="">
-            </div>
-            <div class="info">
-                <ul>
-                    <li>客服電話：(02)2325-7188#987</li>
-                    <li>客服信箱 : CHT-5G@smartfun.com.tw</li>
-                    <li>聯絡時間：週一至週五10:00~17:00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="company_social">
-            <ul>
-                <li><a href="#"><img src="img/icon-fb.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-line.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-yt.svg" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
 </body>
 
@@ -209,6 +143,9 @@
     $(document).ready(function () {
 
         new WOW().init();
+
+        $('#header').load('page/header.html');
+        $('#footer').load('page/footer.html');
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏

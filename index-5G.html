@@ -23,40 +23,7 @@
 </head>
 
 <body>
-    <div class="fixed_area">
-        <ul>
-            <li>
-                <a href="member.html">立即報名</a>
-            </li>
-            <li>
-                <a href="index-smart.html">智慧創新<br>應用大賽</a>
-            </li>
-            <li>
-                <a href="index-smart.html">5G加速器<br>徵選活動</a>
-            </li>
-        </ul>
-    </div>
-    <header>
-        <div class="logo">
-            <img src="img/logo_white.svg" alt="">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
-                <li class="active gradient-text"><a href="index-5g.html" target="_blank">5G加速器徵選</a></li>
-                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
-                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
-                <li><a href="media-coverage.html" target="_blank">歷屆資料</a></li>
-                <li><a href="member.html" target="_blank">參賽專區</a></li>
-            </ul>
-        </nav>
-        <button id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+    <header id="header"></header>
 
     <section>
         <div class="section theme theme-kv">
@@ -73,13 +40,13 @@
                 <div class="tab-box">
                     <form>
                         
-                        <input type="radio" name="smart-tab" id="tab-option1">
-                        <label for="tab-option1" class="tab-option1">徵件對象/條件</label>
+                        <input type="radio" name="smart-tab" id="tab-option1" checked>
+                        <label for="tab-option1" class="tab-option1">徵件主題/資格</label>
 
                         <input type="radio" name="smart-tab" id="tab-option2">
                         <label for="tab-option2" class="tab-option2">加速器機制</label>
 
-                        <input type="radio" name="smart-tab" id="tab-option3" checked>
+                        <input type="radio" name="smart-tab" id="tab-option3">
                         <label for="tab-option3" class="tab-option3">評選說明</label>
 
                         <br>
@@ -99,12 +66,20 @@
 
                         <div class="tab-content tab-content1">
                             <div class="theme-title">
-                                <h3 class="gradient-text">徵件對象/條件</h3>
+                                <h3 class="gradient-text">徵選主題</h3>
                             </div>
                             <div class="theme-content">
                                 <ul>
-                                    <li>隨著全球創新創業風AI x 5G應用蓬勃發展，今年度強化AI賦能，因應ESG綠能永續趨勢，並延續數位轉型、運動科技、元宇宙等主題。從 AIoT、Blockchain、AR/VR/MR/XR、Cloud、BigData、Health 到 Information /cyber security等領域(包含但不限此範圍)，評選具未來潛力發展與商務合作之新創團隊。中華電信5G加速器，將持續運用本身資通訊強項，結合國內外策略合作夥伴，串接上下游產業鏈技術專家及研發資源，整合更深度的技術與商業諮詢，並期望與新創一起因應AI及ESG綠能永續趨勢，開創市場新商機。</li>
-                                    <li>已於台灣成立8年以內（成立日：2017年1月1日後），且須符合台灣中小企業認定標準、取得正式統編。</li>
+                                    <li>強化AI賦能，因應ESG綠能永續趨勢，並延續數位轉型、運動科技、元宇宙等主題</li>
+                                    <li>AIoT、Blockchain、AR/VR/MR/XR、Cloud、BigData、Health 到 Information /cyber security等領域(包含但不限此範圍)</li>
+                                </ul>
+                            </div>
+                            <div class="theme-title">
+                                <h3 class="gradient-text">徵選資格</h3>
+                            </div>
+                            <div class="theme-content">
+                                <ul>
+                                    <li>符合中小企業認定標準且設立未滿八年之公司為原則(2017年1月1日以後成立之企業，且取得正式統編)。</li>
                                     <li>可提供數位轉型、智慧驅動、永續未來等方向之相關新創技術或解決方案。</li>
                                     <li>具未來潛力發展與商務合作之新創團隊，期望與中華電信一起因應AI及ESG綠能永續趨勢，開創市場新商機。</li>
                                 </ul>
@@ -115,7 +90,7 @@
                                 <h3 class="gradient-text">加速器機制</h3>
                             </div>
                             <div class="theme-content">
-                                <p>入選團隊得接受中華電信5G加速器培訓課程與輔導。</p>
+                                <!-- <p>入選團隊得接受中華電信5G加速器培訓課程與輔導。</p> -->
                                 <p>計畫將依入選團隊需求提供多項資源(詳細說明如下)：</p>
                                 <ul class="decimal rule">
                                     <li><h4>商機拓展</h4>提供專業導師輔導資源，擴大共創業務合作。</li>
@@ -133,43 +108,29 @@
                                 <h3 class="gradient-text">評選標準</h3>
                             </div>
                             <div class="theme-content">
-                                <div class="table-content">
-                                    <div class="item head">
-                                        <div class="item-no head">項次</div>
-                                        <div class="item-desc head">內容</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-no">1</div>
-                                        <div class="item-desc">創新應用可行性</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-no">2</div>
-                                        <div class="item-desc">核心技術能量及創新性</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-no">3</div>
-                                        <div class="item-desc">市場與行銷可行性</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-no">4</div>
-                                        <div class="item-desc">經營團隊執行力</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-no">5</div>
-                                        <div class="item-desc">資金規劃</div>
-                                    </div>
+                                <div class="table-content selection">
+                                    <div class="item">創新應用<br>可行性</div>
+                                    <div class="item">核心技術<br>能量及創新性</div>
+                                    <div class="item">市場與行銷<br>可行性</div>
+                                    <div class="item">經營團隊<br>執行力</div>
+                                    <div class="item">資金<br>規劃</div>
+                                    <p>新增“報名文件“：<br>
+                                        1. 請於參賽專區填寫第七屆徵選活動報名資料、上傳公司產品服務簡報檔案（依活動簡章第三項評選標準補充）、徵選同意書，即完成報名。<br>
+                                        2. 徵選參賽文件資料不齊者，經通知未於期限內繳交，視同放棄徵選資格參賽資料。</p>
+                                </div>
+                                <div class="theme-title">
+                                    <h3 class="gradient-text">評選時程</h3>
                                 </div>
                                 <ul class="schedule">
-                                    <h4 class="gradient-text">評選時程</h4>
                                     <li>
                                         <div class="step">1</div>
                                         <div class="topic">報名繳件截止日期</div>
-                                        <div class="time">即日起至9/22(一)</div>
+                                        <div class="time">即日起至9/22 (一)</div>
                                     </li>
                                     <li>
                                         <div class="step">2</div>
                                         <div class="topic">決賽入圍通知</div>
-                                        <div class="time">9/30(二)</div>
+                                        <div class="time">10/9 (四)</div>
                                     </li>
                                     <li>
                                         <div class="step">3</div>
@@ -178,13 +139,13 @@
                                     </li>
                                     <li>
                                         <div class="step">4</div>
-                                        <div class="topic">頒獎典禮<br>(中華電信國際會議室)</div>
-                                        <div class="time">11/27(四)</div>
+                                        <div class="topic">公告獲選</div>
+                                        <div class="time">11/3 (一)</div>
                                     </li>
                                     <li>
                                         <div class="step">5</div>
-                                        <div class="topic">總決賽後依加速器入選個案團隊狀況及需求，啟動輔導與媒合相關活動</div>
-                                        <!-- <div class="time">即日起至9/22(一) </div> -->
+                                        <div class="topic">頒獎典禮<br>(中華電信國際會議室)</div>
+                                        <div class="time">11/27 (四)</div>
                                     </li>
                                 </ul>
                                 
@@ -196,7 +157,9 @@
                                     </h3>
                             </div>
                             <div class="theme-content">
-                                <div class="table-topic">權利</div>
+                                <div class="left">
+                                    <div class="table-topic">權利</div>
+                                </div>
                                 <ul class="decimal">
                                         <li>入選團隊得依規定運用本加速機制中所提供之相關資源，包含企業共創、募資媒合、業師輔導、展會活動行銷及相關企業資源與優惠方案。 </li>
                                         <li>入選團隊將參展Demo Day成果發表相關活動(請勿於確定參加後無故棄權，若有重大或不可抗力之因素須退出本加速器，請由團隊代表人向主辦單位提出說明)。</li>
@@ -204,7 +167,9 @@
                                 <br>
                                 <br>
                                 <br>
-                                <div class="table-topic">義務</div>
+                                <div class="left">
+                                    <div class="table-topic">義務</div>
+                                </div>
                                 <ul class="decimal">
                                     <li>配合第七屆5G加速器徵選活動廣宣，如參與Demo Day、頒獎典禮、影音拍攝、新聞採訪等相關活動。</li>
                                     <li>依誠信原則提供真實資料，提報資料若經查證有違反本徵選辦法或不實陳述者，主辦單位保有終止或取消獲選資格，及返還使用資源等值費用之權利。</li>
@@ -214,7 +179,7 @@
                         </div>
                         <div class="tab-content tab-content5">
                             <div class="theme-title">
-                                <h3 class="gradient-text">智慧創新應用競賽文件下載</h3>
+                                <h3 class="gradient-text">文件下載</h3>
                             </div>
                             <div class="theme-content">
                                 <ul class="document-download">
@@ -225,15 +190,9 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="files/5G加速器徵選活動/02.【團隊申請資料表】2025中華電信5G加速器徵選活動.pdf" download>
-                                            <img src="img/icon-document4.svg" alt="">
-                                            <span>團隊申請資料表</span>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="files/5G加速器徵選活動/03.【參賽同意書】2025中華電信5G加速器徵選活動.pdf" download>
                                             <img src="img/icon-document3.svg" alt="">
-                                            <span>參賽同意書</span>
+                                            <span>徵選同意書</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -261,27 +220,7 @@
                 
             </div>
     </section>
-    <footer>
-        <div class="company_info">
-            <div class="logo">
-                <img src="img/logo_white.svg" alt="">
-            </div>
-            <div class="info">
-                <ul>
-                    <li>客服電話：(02)2325-7188#987</li>
-                    <li>客服信箱 : CHT-5G@smartfun.com.tw</li>
-                    <li>聯絡時間：週一至週五10:00~17:00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="company_social">
-            <ul>
-                <li><a href="#"><img src="img/icon-fb.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-line.svg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon-yt.svg" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
 </body>
 
@@ -290,6 +229,9 @@
     $(document).ready(function () {
 
         new WOW().init();
+
+        $('#header').load('page/header.html');
+        $('#footer').load('page/footer.html');
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏
@@ -317,6 +259,17 @@
             $span2.toggleClass('close');
             $p.slideToggle(); // 有動畫的顯示/隱藏
         });
+    });
+
+    //tab 切換
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash;
+        if (hash) {
+        const targetTab = document.querySelector(`input[type="radio"]${hash}`);
+        if (targetTab) {
+            targetTab.checked = true;
+        }
+        }
     });
 
 
