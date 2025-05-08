@@ -548,6 +548,11 @@ footer .company_social ul li + li {
   margin-left: 20px;
 }
 
+.logo-5g {
+  width: 340px;
+  margin: 0 auto 20px;
+}
+
 section {
   width: 100%;
   overflow: hidden;
@@ -1415,6 +1420,12 @@ section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .tabl
   margin-top: 32px;
 }
 
+section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .table-content .smart-desc a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: underline;
+}
+
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .document-download {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1931,6 +1942,12 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-cont
 
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-content.selection p {
   width: 100%;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-content.selection p a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: underline;
 }
 
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .document-download {
@@ -2999,6 +3016,11 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
   opacity: .9;
 }
 
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content p.note {
+  margin: 0 auto;
+  color: #fff;
+}
+
 section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .member-option {
   width: 100%;
 }
@@ -3968,6 +3990,10 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .proc
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group.w100, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group.w100 {
+  width: 100%;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group h4, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group h4 {

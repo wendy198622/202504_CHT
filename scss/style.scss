@@ -201,7 +201,10 @@ footer{
         }
     }
 }
-
+.logo-5g{
+    width: 340px;
+    margin: 0 auto 20px;
+}
 section{
     width: 100%;
     overflow: hidden;
@@ -883,6 +886,11 @@ section{
                             }
                             .smart-desc{
                                 margin-top: 32px;
+                                a{
+                                    display: inline-block;
+                                    color: #fff;
+                                    text-decoration: underline;
+                                }
                             }
                         }
                         .document-download{
@@ -1332,6 +1340,11 @@ section{
                                 }
                                 p{
                                     width: 100%;
+                                    a{
+                                        display: inline-block;
+                                        color: #fff;
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
@@ -2279,6 +2292,11 @@ section{
                                 }
                             }
                         }
+                        p.note{
+                            // width: 90%;
+                            margin: 0 auto;
+                            color: #fff;
+                        }
                         .member-option{
                             width: 100%;
                             .list{
@@ -3034,6 +3052,9 @@ section{
                             flex-wrap: wrap;
                             align-items: center;
                             justify-content: center;
+                            &.w100{
+                                width: 100%;
+                            }
 
                             h4{
                                 width: 100%;

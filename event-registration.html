@@ -579,7 +579,7 @@
                                             <div class="process_content">
                                                 <ol>
                                                     <p>決選注意事項：</p>
-                                                    <li>1. 決賽簡報為初選時提交之【附件二公司產品服務簡報檔案】，若需調整簡報團隊於10/29(三)12:00前完成上傳</li>
+                                                    <li>1. 決賽簡報於10/29(三)12:00前完成上傳</li>
                                                     <li>2. 決選報告時間共12分鐘(含簡報及QA)</li>
                                                 </ol>
                                                 <fieldset>
@@ -604,7 +604,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="process_group">
+                                        <div class="process_group w100">
                                             <h4>參賽證明下載</h4>
                                             <div class="process_content">
                                                 <fieldset>
@@ -629,7 +629,9 @@
 
                         <div class="tab-content tab-content2">
                             <div class="theme-title">
-                                <h3 class="gradient-text">2025 第七屆徵選活動報名資料</h3>
+                                <h3 class="gradient-text">
+                                    <img class="logo-5g" src="img/logo_5g.svg" alt="">
+                                    2025 第七屆徵選活動報名資料</h3>
                             </div>
                             <div class="theme-content">
                                 <form>
@@ -666,16 +668,6 @@
                                         </fieldset>
 
                                         <fieldset class="w100">
-                                            <div class="form-row">
-                                                <div class="form-label">最近一次募資金額</div>
-                                                <div class="form-inputs">
-                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元；
-                                                    估值 <input type="text" name="valuation" placeholder=""> 元 (新台幣)
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
                                             <label>實收資本額<input type="text" name="company_capital" required></label>
                                         </fieldset>
                                             
@@ -703,55 +695,117 @@
                                                 </label>
                                             </div>
                                         </fieldset>
+                                    </div>
 
-                                        <!-- <fieldset class="w100">
-                                            <label>員工人數<input type="text" name="company_user" required></label>
-                                        </fieldset>
+
+                                    <div class="form-group">
+                                        <div class="staff_group">
+
+                                            <div class="group-title">團隊成員</div>
+
+                                            <!-- Radios -->
+                                            <input type="radio" name="tab-staff" id="staff-tab1" checked>
+                                            <label for="staff-tab1">主要聯絡人</label>
+
+                                            <input type="radio" name="tab-staff" id="staff-tab2">
+                                            <label for="staff-tab2">負責人</label>
                                             
-                                        <fieldset>
-                                            <div class="label-title">目前是否已募資：</div>
-                                            <label>
-                                                <input type="radio" name="funds">
-                                                是<span>(請補充該輪估值及洽談進度)</span>
-                                                該輪估值<input type="text" name="funds_price">
-                                                洽談進度<input type="text" name="funds_progress">
-                                            </label>
-
-                                            <label>
-                                                    <input type="radio" name="funds">
-                                                    否</span>
-                                                </label>
-                                        </fieldset>
-                                            
-                                        <fieldset>
-                                            <div class="label-title">是否已進駐其他創育機構：</div>
-                                            <label>
-                                                <input type="radio" name="funds">
-                                                是<span>(請補充說明進駐機構與時間)</span>
-                                                進駐機構名稱
-                                                <input type="text" name="funds_price">
-                                                日期選擇欄位<input type="date" name="funds_progress">
-                                            </label>
-
-                                            <label>
-                                                <input type="radio" name="funds">
-                                                否</span>
-                                            </label>
-                                        </fieldset>
-    
-                                        <fieldset>
-                                            <div class="label-title">如何得知本賽事：</div>
-                                            <div class="label-group">
-                                                <label><input type="checkbox" name="source" value="previous_team">上一屆參賽團隊</label>
-                                                <label><input type="checkbox" name="source" value="recommendation">師長、朋友、同事、同學推薦</label>
-                                                <label><input type="checkbox" name="source" value="facebook">FB粉絲頁、社團推薦</label>
-                                                <label><input type="checkbox" name="source" value="line">LINE廣告</label>
-                                                <label><input type="checkbox" name="source" value="tech_website">科技網頁廣告</label>
-                                                <label><input type="checkbox" name="source" value="dcard">Dcard廣告</label>
-                                                <label><input type="checkbox" name="source" value="search">自行搜尋</label>
-                                                <label><input type="checkbox" name="source" value="other">其他<input type="text" name="source_other" placeholder="請輸入" style="margin-left: 4px;"></label>
+                                            <!-- Tab Contents -->
+                                            <div id="staff-content1" class="staff-tab-content">
+                                                <div class="staff_people">
+                                                    
+                                                    <div class="staff_role">主要聯絡人</div>
+                                                    <div class="staff">
+                                                        <fieldset>
+                                                            <label><h6>姓名</h6><input type="text" name="staff_name" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <div class="label-title">性別</div>
+                                                            <select name="gender" id="gender" required>
+                                                                <option value="">請選擇</option>
+                                                                <option value="male">男性</option>
+                                                                <option value="female">女性</option>
+                                                            </select>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>單位</h6><input type="text" name="staff_dept" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>職稱</h6><input type="text" name="staff_position" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6><input type="text" name="staff_phone" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>信箱</h6><input type="email" name="staff_email" required></label>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">上傳徵選同意書</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳 
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">上傳身分證明檔</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p> 
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </fieldset> -->
+                                            
+                                            <div id="staff-content2" class="staff-tab-content">
+                                                <div class="staff_people">
+                                                    <div class="staff_role">負責人</div>
+                                                    <div class="staff">
+                                                        <fieldset>
+                                                            <label><h6>姓名</h6><input type="text" name="staff_name" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <div class="label-title">性別</div>
+                                                            <select name="gender" id="gender" required>
+                                                                <option value="">請選擇</option>
+                                                                <option value="male">男性</option>
+                                                                <option value="female">女性</option>
+                                                            </select>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>單位</h6><input type="text" name="staff_dept" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>職稱</h6><input type="text" name="staff_position" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6><input type="text" name="staff_phone" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label><h6>信箱</h6><input type="email" name="staff_email" required></label>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">上傳徵選同意書</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳 
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">上傳身分證明檔</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p> 
+                                                        </fieldset>
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
 
@@ -1026,6 +1080,70 @@
                                                 </fieldset>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="process_group">
+                                            <h4>
+                                                <fieldset disabled>
+                                                    <label>
+                                                        <input type="radio" name="advance" value="advance" checked disabled>
+                                                        決賽入圍
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="advance" value="advance">
+                                                        決賽未入圍
+                                                    </label>
+                                                </fieldset>
+                                            </h4>
+                                            <div class="process_content">
+                                                <ol>
+                                                    <p>決選注意事項：</p>
+                                                    <li>1 .決賽簡報為初選時提交之【附件二公司產品服務簡報檔案】，若需調整簡報團隊於10/29(三)12:00前完成上傳</li>
+                                                    <li>2.(於10/29(三)12:00前完成上傳)</li>
+                                                </ol>
+                                                <fieldset>
+                                                    <h6 class="inline">決賽簡報</h6>
+                                                    <label for="file" class="custom-file-label inline">檔案上傳 
+                                                        <span class="material-icons">arrow_circle_up</span>
+                                                        <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".doc,.docx,.pdf" required>
+                                                    </label>
+                                                    <p class="note">(於11/25(二)12:00前完成上傳)
+                                                        </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <h6 class="inline">決賽參賽同意書
+                                                        </h6>
+                                                    <label for="file" class="custom-file-label inline">檔案上傳 
+                                                        <span class="material-icons">arrow_circle_up</span>
+                                                        <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".jpg,.jpeg,.pdf" required>
+                                                    </label>
+                                                    <p class="note">(限上傳格式jpg、pdf)</p>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="process_group">
+                                            <h4>參賽證明下載</h4>
+                                            <div class="process_content">
+                                                <fieldset>
+                                                    <h6 class="inline">參與徵選活動證明</h6>
+
+                                                    <a class="download" href="#" download>檔案下載
+                                                        <span class="material-icons">download</span>
+                                                    </a>
+                                                    <p class="note">(於11/25(二)17:00開放下載)</p>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group">
+                                        <button class="outline">暫存</button>
+                                        <button class="outline">取消報名/編輯資料</button>
+                                        <button>完成資料送出</button>
                                     </div>
                                 </form>
                             </div>                                   
