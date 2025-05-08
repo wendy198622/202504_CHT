@@ -3291,6 +3291,10 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
   font-size: 14px;
 }
 
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label select {
+  padding: 12px;
+}
+
 @media (max-width: 960px) {
   section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label input[type="text"], section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset label input[type="date"] {
     width: 100%;
@@ -3307,6 +3311,35 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
   color: #fff;
   font-size: 16px;
   margin: 0;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  color: #000;
+  margin: 0 12px 10px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+@media (max-width: 960px) {
+  section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset select {
+    width: 100%;
+    margin-top: 10px;
+    white-space: normal;
+    text-align: left;
+  }
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset.w100 {
@@ -3387,10 +3420,6 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset .label-group label + label {
   margin-left: 0;
   margin-right: 12px;
-}
-
-section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset select {
-  margin-top: 0.4rem;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset textarea {
@@ -3548,11 +3577,15 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .memb
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member fieldset {
   width: 32%;
   margin-top: 4px;
+  gap: 0.5rem;
 }
 
 @media (max-width: 960px) {
@@ -3585,6 +3618,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .memb
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member input[type="text"], section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member input[type="date"], section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member input[type="email"], section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member select {
   width: 100%;
+  height: 40px;
   border-radius: 4px;
 }
 
@@ -3740,6 +3774,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teac
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teacher_group .teacher fieldset {
   width: 32%;
   margin-top: 4px;
+  gap: 0.5rem;
 }
 
 @media (max-width: 960px) {
@@ -3888,6 +3923,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .staf
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  gap: 0.5rem;
 }
 
 @media (max-width: 960px) {

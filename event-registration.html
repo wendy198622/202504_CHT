@@ -64,10 +64,10 @@
                 <h3><span>賽事選擇</span></h3>
                 <div class="tab-box">
                         
-                        <input type="radio" name="smart-tab" id="tab-option1">
+                        <input type="radio" name="smart-tab" id="tab-option1" checked>
                         <label for="tab-option1" class="tab-option1">智慧創新應用大賽</label>
                         
-                        <input type="radio" name="smart-tab" id="tab-option2" checked>
+                        <input type="radio" name="smart-tab" id="tab-option2">
                         <label for="tab-option2" class="tab-option2">5G加速器徵選活動</label>
 
                         <p class="event-note">備註：新創團隊註冊一組帳號密碼，可以報名兩個賽事活動</p>
@@ -163,53 +163,61 @@
                                             <div id="member-content1" class="member-tab-content">
                                                 <div class="member_people">
                                                     
-                                                <div class="member_role">隊長</div>
-                                                <div class="member">
-                                                    <fieldset>
-                                                        <label><h6>姓名</h6><input type="text" name="member_name" required></label>
-                                                    </fieldset>
-                                                    <fieldset>
-                                                        <div class="label-title">性別</div>
-                                                        <select name="gender" id="gender" required>
-                                                            <option value="">請選擇</option>
-                                                            <option value="male">男性</option>
-                                                            <option value="female">女性</option>
-                                                        </select>
-                                                    </fieldset>
-                                                    <fieldset>
-                                                        <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
-                                                    </fieldset>
-                                                    <fieldset>
-                                                        <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
-                                                    </fieldset>
-                                                    <fieldset>
-                                                        <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
-                                                    </fieldset>
-                                                    <fieldset>
-                                                        <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
-                                                    </fieldset>
-                                                    <fieldset class="w100">
-                                                        <label><h6>信箱</h6><input type="email" name="member_email" required></label>
-                                                    </fieldset>
-                                                    <fieldset class="w100">
-                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                        <label for="file" class="custom-file-label inline">檔案上傳 
-                                                            <span class="material-icons">arrow_circle_up</span>
-                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                        </label>
-                                                        <p class="note">(限jpg、pdf格式)</p>
-                                                    </fieldset>
-                                                    <fieldset class="w100">
-                                                        <h6 class="inline">身分證明檔上傳</h6>
-                                                        <label for="file" class="custom-file-label inline">檔案上傳
-                                                            <span class="material-icons">arrow_circle_up</span>
-                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                        </label>
-                                                        <p class="note">(限jpg、pdf格式)</p> 
-                                                        <p class="note">學生組：上傳學生證</p>
-                                                        <p class="note">社會組：上傳身分證</p>
-                                                    </fieldset>
-                                                </div>
+                                                    <div class="member_role">隊長</div>
+                                                    <div class="member">
+                                                        <fieldset>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
+                                                            <select name="gender" id="gender" required>
+                                                                <option value="">請選擇</option>
+                                                                <option value="male">男性</option>
+                                                                <option value="female">女性</option>
+                                                            </select>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳 
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p>
+                                                        </fieldset>
+                                                        <fieldset class="w100">
+                                                            <h6 class="inline">身分證明檔上傳</h6>
+                                                            <label for="file" class="custom-file-label inline">檔案上傳
+                                                                <span class="material-icons">arrow_circle_up</span>
+                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                            </label>
+                                                            <p class="note">(限jpg、pdf格式)</p> 
+                                                            <p class="note">學生組：上傳學生證</p>
+                                                            <p class="note">社會組：上傳身分證</p>
+                                                        </fieldset>
+                                                    </div>
                                                 </div>
                                             </div>
                                             
@@ -218,10 +226,13 @@
                                                     <div class="member_role">隊員1</div>
                                                     <div class="member">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -229,19 +240,24 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
-                                                            <label><h6>信箱</h6><input type="email" name="member_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
@@ -261,7 +277,7 @@
                                                             <p class="note">學生組：上傳學生證</p>
                                                             <p class="note">社會組：上傳身分證</p>
                                                         </fieldset>
-                                                    </div>                                                      
+                                                    </div>                   
                                                 </div>
                                             </div>
                                             
@@ -270,10 +286,13 @@
                                                     <div class="member_role">隊員2</div>
                                                     <div class="member">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -281,19 +300,24 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
-                                                            <label><h6>信箱</h6><input type="email" name="member_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
@@ -313,7 +337,7 @@
                                                             <p class="note">學生組：上傳學生證</p>
                                                             <p class="note">社會組：上傳身分證</p>
                                                         </fieldset>
-                                                    </div>          
+                                                    </div>
                                                 </div>
                                             </div>
                                             
@@ -322,10 +346,13 @@
                                                     <div class="member_role">隊員3</div>
                                                     <div class="member">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -333,19 +360,24 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
-                                                            <label><h6>信箱</h6><input type="email" name="member_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
@@ -365,7 +397,7 @@
                                                             <p class="note">學生組：上傳學生證</p>
                                                             <p class="note">社會組：上傳身分證</p>
                                                         </fieldset>
-                                                    </div>          
+                                                    </div>
                                                 </div>
                                             </div>
                                             
@@ -374,10 +406,13 @@
                                                     <div class="member_role">隊員4</div>
                                                     <div class="member">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -385,19 +420,24 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
-                                                            <label><h6>信箱</h6><input type="email" name="member_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
@@ -417,7 +457,7 @@
                                                             <p class="note">學生組：上傳學生證</p>
                                                             <p class="note">社會組：上傳身分證</p>
                                                         </fieldset>
-                                                    </div>          
+                                                    </div>
                                                 </div>
                                             </div>
                                             
@@ -426,10 +466,13 @@
                                                     <div class="member_role">隊員5</div>
                                                     <div class="member">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required>
+                                                            </label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
+                                                            <!-- <div class="label-title">性別</div> -->
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -437,19 +480,24 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>學校/公司</h6><input type="text" name="member_company" required></label>
+                                                            <h6>學校/公司</h6>
+                                                            <label><input type="text" name="member_company" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>科系/職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>科系/職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>出生年月日</h6><input type="date" name="member_birth" required></label>
+                                                            <h6>出生年月日</h6>
+                                                            <label><input type="date" name="member_birth" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>手機號碼</h6><input type="text" name="member_phone" required></label>
+                                                            <h6>手機號碼</h6>
+                                                            <label><input type="text" name="member_phone" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
-                                                            <label><h6>信箱</h6><input type="email" name="member_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="member_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
@@ -469,7 +517,7 @@
                                                             <p class="note">學生組：上傳學生證</p>
                                                             <p class="note">社會組：上傳身分證</p>
                                                         </fieldset>
-                                                    </div>          
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,13 +541,16 @@
                                                     <div class="teacher_role">老師1</div>
                                                     <div class="teacher">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="member_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>任職學校</h6><input type="text" name="member_school" required></label>
+                                                            <h6>任職學校</h6>
+                                                            <label><input type="text" name="member_school" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>職稱</h6><input type="text" name="member_position" required></label>
+                                                            <h6>職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
                                                     </div>
                                                 </div>
@@ -510,15 +561,18 @@
                                                     <div class="teacher_role">老師2</div>
                                                     <div class="teacher">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="teacher_name" required></label>
+                                                                <h6>姓名</h6>
+                                                            <label><input type="text" name="member_name" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>任職學校</h6><input type="text" name="teacher_school" required></label>
+                                                            <h6>任職學校</h6>
+                                                            <label><input type="text" name="member_school" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>職稱</h6><input type="text" name="teacher_position" required></label>
+                                                            <h6>職稱</h6>
+                                                            <label><input type="text" name="member_position" required></label>
                                                         </fieldset>
-                                                    </div>                                                      
+                                                    </div>                      
                                                 </div>
                                             </div>
                                         </div>
@@ -695,6 +749,10 @@
                                                 </label>
                                             </div>
                                         </fieldset>
+
+                                        <fieldset class="w100">
+                                            <label>員工數<input type="text" name="company_number" required></label>
+                                        </fieldset>
                                     </div>
 
 
@@ -717,10 +775,11 @@
                                                     <div class="staff_role">主要聯絡人</div>
                                                     <div class="staff">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="staff_name" required></label>
+                                                            <h6>姓名</h6>
+                                                            <label><input type="text" name="staff_name" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -728,16 +787,20 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>單位</h6><input type="text" name="staff_dept" required></label>
+                                                            <h6>單位</h6>
+                                                            <label><input type="text" name="staff_dept" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>職稱</h6><input type="text" name="staff_position" required></label>
+                                                            <h6>職稱</h6>
+                                                            <label><input type="text" name="staff_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6><input type="text" name="staff_phone" required></label>
+                                                            <h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6>
+                                                            <label><input type="text" name="staff_phone" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>信箱</h6><input type="email" name="staff_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="staff_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">上傳徵選同意書</h6>
@@ -764,10 +827,11 @@
                                                     <div class="staff_role">負責人</div>
                                                     <div class="staff">
                                                         <fieldset>
-                                                            <label><h6>姓名</h6><input type="text" name="staff_name" required></label>
+                                                            <h6>姓名</h6>
+                                                            <label><input type="text" name="staff_name" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <div class="label-title">性別</div>
+                                                            <h6>性別</h6>
                                                             <select name="gender" id="gender" required>
                                                                 <option value="">請選擇</option>
                                                                 <option value="male">男性</option>
@@ -775,16 +839,20 @@
                                                             </select>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>單位</h6><input type="text" name="staff_dept" required></label>
+                                                            <h6>單位</h6>
+                                                            <label><input type="text" name="staff_dept" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>職稱</h6><input type="text" name="staff_position" required></label>
+                                                            <h6>職稱</h6>
+                                                            <label><input type="text" name="staff_position" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6><input type="text" name="staff_phone" required></label>
+                                                            <h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6>
+                                                            <label><input type="text" name="staff_phone" required></label>
                                                         </fieldset>
                                                         <fieldset>
-                                                            <label><h6>信箱</h6><input type="email" name="staff_email" required></label>
+                                                            <h6>信箱</h6>
+                                                            <label><input type="email" name="staff_email" required></label>
                                                         </fieldset>
                                                         <fieldset class="w100">
                                                             <h6 class="inline">上傳徵選同意書</h6>
@@ -1125,7 +1193,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="process_group">
+                                        <div class="process_group w100">
                                             <h4>參賽證明下載</h4>
                                             <div class="process_content">
                                                 <fieldset>
@@ -1142,7 +1210,6 @@
 
                                     <div class="btn-group">
                                         <button class="outline">暫存</button>
-                                        <button class="outline">取消報名/編輯資料</button>
                                         <button>完成資料送出</button>
                                     </div>
                                 </form>
