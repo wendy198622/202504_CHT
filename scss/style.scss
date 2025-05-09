@@ -870,8 +870,8 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                @media (max-width:960px){
-                                    width: 960px;
+                                @media (max-width:800px){
+                                    width: 800px;
                                 }
 
                                 .item-name{
@@ -1332,14 +1332,17 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                @media (max-width:960px){
-                                    width: 960px;
+                                @media (max-width:800px){
+                                    width: 800px;
                                 }
 
                                 .item-no{
                                     padding: 10px 20px;
                                     width: 80px;
                                     color: #fff;
+                                    @media (max-width:800px){
+                                        padding: 10px 10px;
+                                    }
                                 }
 
                                 .item-desc{
@@ -1758,14 +1761,17 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                @media (max-width:960px){
-                                    width: 960px;
+                                @media (max-width:800px){
+                                    width: 800px;
                                 }
 
                                 >div{
                                     width: 120px;
                                     color: #fff;
                                     padding: 10px 20px;
+                                    @media (max-width:800px){
+                                        padding: 10px 10px;
+                                    }
                                 }
 
                                 .item-type{
@@ -1981,8 +1987,8 @@ section{
                                 line-height: 2;
                                 margin: 4px 0;
                                 border: 1px solid $secondery-color;
-                                @media (max-width:960px){
-                                    width: 960px;
+                                @media (max-width:800px){
+                                    width: 800px;
                                 }
 
                                 .item-title{
@@ -2023,8 +2029,8 @@ section{
                                 display: flex;
                                 justify-content: space-around;
                                 gap: 12px;
-                                @media (max-width:960px){
-                                    width: 960px;
+                                @media (max-width:800px){
+                                    width: 800px;
                                 }
                                 > div{
                                     padding: 10px;
