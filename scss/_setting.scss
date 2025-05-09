@@ -33,7 +33,10 @@ $linear-color-light: linear-gradient(235deg, #c6ddff, #d5c6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+.white{
+    color: #fff;
+    text-align: center;
+}
 //setting
 body{ font-family: "Noto Sans TC", sans-serif;}
 *{ box-sizing: border-box; font-family:  "Noto Sans TC", sans-serif; color: $primary-color; letter-spacing: 1px;}

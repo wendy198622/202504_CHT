@@ -70,8 +70,6 @@
                         <input type="radio" name="smart-tab" id="tab-option2">
                         <label for="tab-option2" class="tab-option2">5G加速器徵選活動</label>
 
-                        <p class="event-note">備註：新創團隊註冊一組帳號密碼，可以報名兩個賽事活動</p>
-
                         
                         <div class="tab-content tab-content1">
                             <div class="theme-title">
@@ -712,11 +710,21 @@
                                         </fieldset>
 
                                         <fieldset class="w100">
-                                            <label>登記資本額 <input type="text" name="company_capital" required></label>
+                                            <div class="form-row">
+                                                <div class="form-label">登記資本額</div>
+                                                <div class="form-inputs">
+                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元
+                                                </div>
+                                            </div>
                                         </fieldset>
 
                                         <fieldset class="w100">
-                                            <label>實收資本額<input type="text" name="company_capital" required></label>
+                                            <div class="form-row">
+                                                <div class="form-label">實收資本額</div>
+                                                <div class="form-inputs">
+                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元
+                                                </div>
+                                            </div>
                                         </fieldset>
                                             
                                         <fieldset>
@@ -780,10 +788,10 @@
                                                                 <option value="female">女性</option>
                                                             </select>
                                                         </fieldset>
-                                                        <fieldset>
+                                                        <!-- <fieldset>
                                                             <h6>單位</h6>
                                                             <label><input type="text" name="staff_dept" required></label>
-                                                        </fieldset>
+                                                        </fieldset> -->
                                                         <fieldset>
                                                             <h6>職稱</h6>
                                                             <label><input type="text" name="staff_position" required></label>
@@ -792,7 +800,7 @@
                                                             <h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6>
                                                             <label><input type="text" name="staff_phone" required></label>
                                                         </fieldset>
-                                                        <fieldset>
+                                                        <fieldset class="w100">
                                                             <h6>信箱</h6>
                                                             <label><input type="email" name="staff_email" required></label>
                                                         </fieldset>
@@ -831,38 +839,6 @@
                                                                 <option value="male">男性</option>
                                                                 <option value="female">女性</option>
                                                             </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>單位</h6>
-                                                            <label><input type="text" name="staff_dept" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>職稱</h6>
-                                                            <label><input type="text" name="staff_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6>
-                                                            <label><input type="text" name="staff_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="staff_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">上傳徵選同意書</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">上傳身分證明檔</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
                                                         </fieldset>
                                                     </div>                                                   
                                                 </div>
@@ -1090,7 +1066,7 @@
                                         </fieldset>
 
                                         <fieldset>
-                                            <div class="label-title mr20">團隊需求(最期望合作3種？請排序1~3優先順位)</div>
+                                            <div class="label-title mr20">團隊需求(最期望合作3項)</div>
                                             <div class="label-content">
                                                 <label>
                                                     <input type="checkbox" name="">場域驗證
@@ -1201,6 +1177,8 @@
                                         </div>
                                     </div>
 
+                                    <p class="white">如新創公司符合「智慧創新應用大賽暨5G加速器徵選活動」資格，可使用同一註冊帳號，報名兩個賽事活動</p>
+                                    
                                     <div class="btn-group">
                                         <button class="outline">暫存</button>
                                         <button>完成資料送出</button>
