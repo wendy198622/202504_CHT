@@ -1443,6 +1443,7 @@ section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .tabl
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .table-content .item.head {
   border: 0;
   background: linear-gradient(235deg, #c6ddff, #d5c6ff);
+  white-space: nowrap;
 }
 
 section .theme-smart .theme-smart-tab .tab-box .tab-content .theme-content .table-content .item.head .head {
@@ -1992,6 +1993,7 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-cont
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-content .item.head {
   border: 0;
   background: linear-gradient(235deg, #c6ddff, #d5c6ff);
+  white-space: nowrap;
 }
 
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content .table-content .item.head .head {
@@ -2529,6 +2531,7 @@ section .theme-result .theme-result-tab .tab-box .tab-content .theme-content .ta
   border: 0;
   background: linear-gradient(235deg, #c6ddff, #d5c6ff);
   padding: 6px 0;
+  white-space: nowrap;
 }
 
 section .theme-result .theme-result-tab .tab-box .tab-content .theme-content .table-content .item.head .head {
@@ -2803,6 +2806,7 @@ section .theme-media .theme-media-tab .tab-box .tab-content .theme-content .tabl
 section .theme-media .theme-media-tab .tab-box .tab-content .theme-content .table-content .item.head {
   border: 0;
   background: linear-gradient(235deg, #c6ddff, #d5c6ff);
+  white-space: nowrap;
 }
 
 section .theme-media .theme-media-tab .tab-box .tab-content .theme-content .table-content .item.head .head {
@@ -2881,6 +2885,7 @@ section .theme-media .theme-media-tab .tab-box .tab-content-inner .theme-content
   line-height: 1.6;
   border: 0;
   padding: 6px 0;
+  white-space: nowrap;
 }
 
 section .theme-member {

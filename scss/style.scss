@@ -897,6 +897,7 @@ section{
                                 &.head{
                                     border: 0;
                                     background: $linear-color-light;
+                                    white-space:nowrap;
                                     .head{
                                         color: $primary-color
                                     }
@@ -1362,6 +1363,7 @@ section{
                                 &.head{
                                     border: 0;
                                     background: $linear-color-light;
+                                    white-space:nowrap;
                                     .head{
                                         color: $primary-color
                                     }
@@ -1806,6 +1808,7 @@ section{
                                     border: 0;
                                     background: $linear-color-light;
                                     padding: 6px 0;
+                                    white-space:nowrap;
                                     .head{
                                         color: $primary-color
                                     }
@@ -2034,6 +2037,7 @@ section{
                                 &.head{
                                     border: 0;
                                     background: $linear-color-light;
+                                    white-space:nowrap;
                                     .head{
                                         color: $primary-color
                                     }
@@ -2088,6 +2092,7 @@ section{
                                     border: 0;
                                     // background: $linear-color-light;
                                     padding: 6px 0;
+                                    white-space:nowrap;
                                 }
 
                             }
