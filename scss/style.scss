@@ -243,6 +243,12 @@ section{
             letter-spacing: 4px;
         }
     }
+
+    .theme-content + .theme-title{
+        h3{
+            margin-top: 28px;
+        }
+    }
     .theme-content{
         margin-top: 40px;
 
@@ -2770,6 +2776,9 @@ section{
 
                             textarea{
                                 width: 100%;
+                                @media (max-width:800px){
+                                    height: 120px;
+                                }
                             }
                             .form-row {
                                 display: flex;
@@ -3367,7 +3376,7 @@ section{
                                     display: none;
                                 }
                                 
-                                .custom-file-label, .download{
+                                .custom-file-label, a.download{
                                     // width: 200px;
                                     font-weight: 500;
                                     display: inline-block;
@@ -3377,6 +3386,7 @@ section{
                                     border-radius: 4px;
                                     cursor: pointer;
                                     margin-left: 20px;
+                                    margin-top: 10px;
                                     span{
                                         font-size: 20px;
                                         height: 24px;
@@ -3472,10 +3482,21 @@ section{
                     // outline: 1px solid red;
                 }
             }
+            .item-title{
+                width: 400px;
+            }
+            .item-media{
+                width: 100px;
+            }
+            .item-date{
+                width: 100px;
+            }
             .item-no{
                 width: 88px;
             }
-
+            .item-year{
+                width: 70px;
+            }
             .item-type{
                 width: 142px;
             }

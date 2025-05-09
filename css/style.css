@@ -617,6 +617,10 @@ section .theme-title h3 {
   letter-spacing: 4px;
 }
 
+section .theme-content + .theme-title h3 {
+  margin-top: 28px;
+}
+
 section .theme-content {
   margin-top: 40px;
 }
@@ -3319,6 +3323,12 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
   width: 100%;
 }
 
+@media (max-width: 800px) {
+  section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset textarea {
+    height: 120px;
+  }
+}
+
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4089,7 +4099,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .proc
   display: none;
 }
 
-section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .download {
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content a.download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content a.download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content a.download, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content a.download {
   font-weight: 500;
   display: inline-block;
   background: linear-gradient(235deg, #c6ddff, #d5c6ff);
@@ -4098,16 +4108,17 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .proc
   border-radius: 4px;
   cursor: pointer;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
-section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .download span {
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content a.download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content a.download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content a.download span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label span, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content a.download span {
   font-size: 20px;
   height: 24px;
   vertical-align: middle;
   color: #191816;
 }
 
-section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .download:hover {
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .process_content a.download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .event_content a.download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .process_content a.download:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content .custom-file-label:hover, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .event_group .event_content a.download:hover {
   opacity: .9;
 }
 
@@ -4212,8 +4223,24 @@ section .table-content .item > div {
   color: #fff;
 }
 
+section .table-content .item .item-title {
+  width: 400px;
+}
+
+section .table-content .item .item-media {
+  width: 100px;
+}
+
+section .table-content .item .item-date {
+  width: 100px;
+}
+
 section .table-content .item .item-no {
   width: 88px;
+}
+
+section .table-content .item .item-year {
+  width: 70px;
 }
 
 section .table-content .item .item-type {
