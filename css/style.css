@@ -530,6 +530,8 @@ footer .company_info .info ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 960px) {
@@ -548,17 +550,7 @@ footer .company_info .info ul {
 footer .company_info .info ul li {
   color: #fff;
   font-size: 15px;
-}
-
-footer .company_info .info ul li + li {
-  margin-left: 20px;
-}
-
-@media (max-width: 960px) {
-  footer .company_info .info ul li + li {
-    margin-left: 0;
-    margin-top: 10px;
-  }
+  margin-right: 16px;
 }
 
 @media (max-width: 960px) {
