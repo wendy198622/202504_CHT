@@ -902,30 +902,7 @@ section{
                                     justify-content: flex-start;
                                 }
 
-                                .item-name{
-                                    padding: 10px 20px;
-                                    width: 200px;
-                                    color: #fff;
-                                    @media (max-width:800px){
-                                        text-align: left;
-                                    }
-                                }
-
-                                .item-desc{
-                                    color: #fff;
-                                    width: 500px;
-                                    @media (max-width:800px){
-                                        text-align: left;
-                                    }
-                                }
-
-                                .item-percent{
-                                    width: 72px;
-                                    color: #fff;
-                                    @media (max-width:800px){
-                                        text-align: left;
-                                    }
-                                }
+                                
                                 &.head{
                                     border: 0;
                                     background: $linear-color-light;
@@ -935,14 +912,6 @@ section{
                                     }
                                 }
                             }
-                        //     .smart-desc{
-                        //         margin-top: 32px;
-                        //         a{
-                        //             display: inline-block;
-                        //             color: #fff;
-                        //             text-decoration: underline;
-                        //         }
-                        //     }
                         }
                         .document-download{
                             display: flex;
@@ -3579,6 +3548,15 @@ section{
             .item-awards{
                 width: 60px;
             }
+            .item-awardsall{
+                width: 160px;
+            }
+            .item-count{
+                width: 120px;
+            }
+            .item-bonus{
+                width: 200px;
+            }
 
             .item-team, .item-unit, .item-work{
                 width: 100px;                                    
@@ -3587,7 +3565,30 @@ section{
             .item-photo{
                 width: 100px;                                    
             }
+            .item-name{
+                padding: 10px 20px;
+                width: 200px;
+                color: #fff;
+                @media (max-width:800px){
+                    text-align: left;
+                }
+            }
 
+            .item-desc{
+                color: #fff;
+                width: 500px;
+                @media (max-width:800px){
+                    text-align: left;
+                }
+            }
+
+            .item-percent{
+                width: 72px;
+                color: #fff;
+                @media (max-width:800px){
+                    text-align: left;
+                }
+            }
             &.head{
                 line-height: 1.6;
                 border: 0;
