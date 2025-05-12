@@ -23,7 +23,42 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <header id="header">
+        <div class="fixed_area">
+            <ul>
+                <li>
+                    <a href="member.html">立即報名</a>
+                </li>
+                <li>
+                    <a href="index-smart.html#tab-option1">智慧創新<br>應用大賽</a>
+                </li>
+                <li>
+                    <a href="index-5g.html#tab-option1">5G加速器<br>徵選活動</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo_white.svg" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
+                <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
+                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
+                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
+                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
+                <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
+                <li><a href="member.html" target="_blank">參賽專區</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
     <section>
         <div class="section theme theme-kv">
@@ -390,7 +425,7 @@
                                     <ul class="smart-desc">
                                         <li>完整繳交初賽資料之團隊，均可向執行單位申請參賽證明。</li>
                                         <li>決賽評審團將由業界及學界專業評審組成，入選決賽隊伍決賽指定時間與地點進行現場簡報及作品Demo，報告時間以12分鐘為限。</li>
-                                        <li>如使用中華電信 <a href="https://www.yocity.com.tw/">YoCity 元宇宙平台</a>來開發作品之參賽團隊，即可角逐「元宇宙應用特別獎」。該獎項由專業評審團進行獨立評選，不影響其他競賽獎項評選。(該獨立獎項不適用以上評分規則。提交初賽資料與作品時，請附加簡要技術說明，介紹如何運用 YoCity 元宇宙技術，並於評分期間不可進行任何修改變更平台作品之操作。)</li>
+                                        <li>如使用中華電信 <a class="inline" href="https://www.yocity.com.tw/">YoCity 元宇宙平台</a>來開發作品之參賽團隊，即可角逐「元宇宙應用特別獎」。該獎項由專業評審團進行獨立評選，不影響其他競賽獎項評選。(該獨立獎項不適用以上評分規則。提交初賽資料與作品時，請附加簡要技術說明，介紹如何運用 YoCity 元宇宙技術，並於評分期間不可進行任何修改變更平台作品之操作。)</li>
                                     </ul>
                                 </div>
                             </div>                                   
@@ -620,7 +655,7 @@
 
         new WOW().init();
 
-        $('#header').load('page/header.html');
+        // $('#header').load('page/header.html');
         $('#footer').load('page/footer.html');
         
         $('#menu-toggle').on('click', function () {

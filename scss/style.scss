@@ -883,53 +883,58 @@ section{
                             border-radius: 10px;
                             margin-bottom: 20px;
                         }
-                        // .table-content{
-                        //     margin-bottom: 60px;
-                        //     @media (max-width:800px){
-                        //         width: 100%;
-                        //         overflow: scroll;
-                        //     }
-                        //     .item{
-                        //         display: flex;
-                        //         flex-direction: row;
-                        //         justify-content: space-between;
-                        //         align-items: center;
-                        //         line-height: 2;
-                        //         margin: 4px 0;
-                        //         border: 1px solid $secondery-color;
-                        //         @media (max-width:800px){
-                        //             width: 800px;
-                        //         }
+                        .table-content{
+                            margin-bottom: 60px;
+                            @media (max-width:800px){
+                                width: 100%;
+                                overflow: scroll;
+                            }
+                            .item{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                line-height: 2;
+                                margin: 4px 0;
+                                border: 1px solid $secondery-color;
+                                @media (max-width:800px){
+                                    width: 800px;
+                                    justify-content: flex-start;
+                                }
 
-                        //         .item-name{
-                        //             padding: 10px 20px;
-                        //             width: 200px;
-                        //             color: #fff;
-                        //             @media (max-width:800px){
-                        //                 width: auto;
-                        //             }
-                        //         }
+                                .item-name{
+                                    padding: 10px 20px;
+                                    width: 200px;
+                                    color: #fff;
+                                    @media (max-width:800px){
+                                        text-align: left;
+                                    }
+                                }
 
-                        //         .item-desc{
-                        //             color: #fff;
-                        //         }
+                                .item-desc{
+                                    color: #fff;
+                                    width: 500px;
+                                    @media (max-width:800px){
+                                        text-align: left;
+                                    }
+                                }
 
-                        //         .item-percent{
-                        //             width: 120px;
-                        //             color: #fff;
-                        //             @media (max-width:800px){
-                        //                 width: auto;
-                        //             }
-                        //         }
-                        //         &.head{
-                        //             border: 0;
-                        //             background: $linear-color-light;
-                        //             white-space:nowrap;
-                        //             .head{
-                        //                 color: $primary-color
-                        //             }
-                        //         }
-                        //     }
+                                .item-percent{
+                                    width: 72px;
+                                    color: #fff;
+                                    @media (max-width:800px){
+                                        text-align: left;
+                                    }
+                                }
+                                &.head{
+                                    border: 0;
+                                    background: $linear-color-light;
+                                    white-space:nowrap;
+                                    .head{
+                                        color: $primary-color
+                                    }
+                                }
+                            }
                         //     .smart-desc{
                         //         margin-top: 32px;
                         //         a{
@@ -938,7 +943,7 @@ section{
                         //             text-decoration: underline;
                         //         }
                         //     }
-                        // }
+                        }
                         .document-download{
                             display: flex;
                             justify-content: space-between;
@@ -3598,4 +3603,8 @@ section{
 }
 .mt20{
     margin-top: 20px;
+}
+a.inline{
+    display: inline-block;
+    color: #fff;
 }
